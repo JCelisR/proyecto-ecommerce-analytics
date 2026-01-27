@@ -1,5 +1,5 @@
 # proyecto-ecommerce-analytics
-# proyecto-ecommerce-analytics
+
 # Proyecto cierre módulo 3: Análisis de E-commerce
 
 ## Descripción del Proyecto
@@ -42,3 +42,9 @@ Este proyecto consiste en el desarrollo de un flujo de trabajo automatizado para
 - Aplicación de la **Moda** para variables discretas (Cantidad).
 - **Tratamiento de Outliers:** Implementación del método del **Rango Intercuartílico (IQR)** para filtrar registros que distorsionan el análisis estadístico.
 - Reducción de ruido en el dataset y creación de `dataset_limpio.csv`.
+
+### Clase 5: Data Wrangling y Enriquecimiento
+- Segmentación de transacciones en categorías ('Económica', 'Estándar', 'Premium') para facilitar el análisis de marketing.
+- Uso de funciones **Lambda** y `.apply()` para cálculos dinámicos de impuestos y totales.
+- Renombramiento de columnas y reordenamiento estratégico de filas para mejorar la legibilidad del reporte final.
+- Conversión de tipos de datos (`astype`) para asegurar la eficiencia en el procesamiento de grandes volúmenes.
