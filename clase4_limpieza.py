@@ -23,16 +23,14 @@ print("\n--- Conteo de Valores Nulos ---")
 print(df.isnull().sum())
 
 # 3. IMPUTACIÓN (Tratamiento de nulos)
-# Imputamos 'Monto' con la mediana (más robusta ante outliers que la media)
 mediana_monto = df['Monto'].median()
 df['Monto'] = df['Monto'].fillna(mediana_monto)
 
-# Imputamos 'Cantidad' con la moda (el valor más frecuente)
 moda_cantidad = df['Cantidad'].mode()[0]
 df['Cantidad'] = df['Cantidad'].fillna(moda_cantidad)
 print(f"\n✅ Nulos imputados (Monto con {mediana_monto} y Cantidad con {moda_cantidad}).")
 
-# 4. DETECCIÓN Y FILTRADO DE OUTLIERS (Método IQR)
+# 4. DETECCIÓN Y FILTRADO DE OUTLIERS
 Q1 = df['Monto'].quantile(0.25)
 Q3 = df['Monto'].quantile(0.75)
 IQR = Q3 - Q1
@@ -48,4 +46,4 @@ print(f"✅ Outliers eliminados: {outliers_detectados}")
 
 # 5. GUARDAR DATASET LIMPIO
 df_clean.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_limpio.csv', index=False, sep=';', encoding='latin1')
-print("\n🚀 Dataset limpio guardado en 'data/dataset_limpio.csv'.")
+print("\n Dataset limpio guardado en 'data/dataset_limpio.csv'.")

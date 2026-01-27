@@ -1,7 +1,7 @@
 import numpy as np
 import os
 
-# --- 1. GENERACIÓN DE DATOS FICTICIOS ---
+# 1. GENERACIÓN DE DATOS FICTICIOS
 # Configuramos la semilla para que los datos sean siempre los mismos al ejecutar
 np.random.seed(42)
 
@@ -17,7 +17,7 @@ montos = np.random.normal(500, 150, size=n_registros).round(2)
 # Cantidades: Números enteros entre 1 y 5 productos por compra
 cantidades = np.random.randint(1, 6, size=n_registros)
 
-# --- 2. OPERACIONES MATEMÁTICAS BÁSICAS ---
+# 2. OPERACIONES MATEMÁTICAS BÁSICAS
 print("--- RESUMEN ESTADÍSTICO INICIAL (NumPy) ---")
 print(f"Total de Ventas: ${np.sum(montos):,.2f}")
 print(f"Ticket Promedio: ${np.mean(montos):,.2f}")
@@ -26,7 +26,7 @@ print(f"Desviación Estándar de Ventas: ${np.std(montos):,.2f}")
 print(f"Total de productos vendidos: {np.sum(cantidades)}")
 print("-" * 40)
 
-# --- 3. ESTRUCTURACIÓN Y GUARDADO ---
+# 3. ESTRUCTURACIÓN Y GUARDADO
 # Creamos una carpeta 'data' si no existe
 if not os.path.exists('data'):
     os.makedirs('data')

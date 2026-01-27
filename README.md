@@ -1,22 +1,24 @@
-# proyecto-ecommerce-analytics
-
 # Proyecto cierre módulo 3: Análisis de E-commerce
+Repositorio dedicado al análisis exploratorio, limpieza y transformación de datos de un entorno e-commerce utilizando Python.
 
 ## Descripción del Proyecto
 Este proyecto consiste en el desarrollo de un flujo de trabajo automatizado para la obtención, limpieza y estructuración de datos de una empresa de e-commerce. El objetivo es transformar datos crudos provenientes de múltiples fuentes (CSV, Excel, Web) en un dataset confiable listo para modelos de Machine Learning y reportes estratégicos.
 
-## ¿Qué utilizar?
-- **Lenguaje:** Python 3.x
-- **Librerías Principales:** 
-        - `NumPy`: Para manipulación de datos numéricos y generación de datos sintéticos.
-        - `Pandas`: Para limpieza, transformación y análisis estructural.
-- **Entorno:** Google Colab / VS Code.
-- **Control de Versiones:** GitHub.
+## 📁 Estructura del Proyecto
+- `clase1_numpy.py`: Generación y fundamentos de arrays.
+- `clase2_panda.py`: Estructuras de datos (Series y DataFrames).
+- `clase3_extraccion.py`: Lectura de fuentes externas (CSV, Excel, Web).
+- `clase4_limpieza.py`: Tratamiento de nulos y Outliers (IQR).
+- `clase5_wrangling.py`: Transformación avanzada y enriquecimiento.
+- `clase6_reportes.py`: Agrupamiento y tablas dinámicas finales.
 
-## Estructura del Repositorio
-- `notebooks/`: Cuadernos de experimentación (Google Colab).
-- `data/`: Archivos generados y datasets procesados.
-- `scripts/`: Código fuente en formato `.py` para procesos automatizados.
+## Datos
+Los datasets procesados se encuentran en la carpeta `/data`.
+
+## Tecnologías
+- Python 3.13+
+- Pandas / NumPy
+- Openpyxl / Lxml
 
 ## Avance por Clases
 ### Clase 1: Cimentación con NumPy
@@ -48,3 +50,20 @@ Este proyecto consiste en el desarrollo de un flujo de trabajo automatizado para
 - Uso de funciones **Lambda** y `.apply()` para cálculos dinámicos de impuestos y totales.
 - Renombramiento de columnas y reordenamiento estratégico de filas para mejorar la legibilidad del reporte final.
 - Conversión de tipos de datos (`astype`) para asegurar la eficiencia en el procesamiento de grandes volúmenes.
+
+### Clase 6: Agrupamiento, Pivoteo e Integración Final
+- Uso de `pd.merge()` para consolidar datos de ventas con el catálogo de productos (similares a JOINs en SQL).
+- Implementación de `groupby()` con múltiples funciones estadísticas (`agg`) para extraer métricas de negocio.
+- Creación de **Tablas Pivot** para cruzar categorías de productos con segmentos de precio.
+- Generación de reportes finales en formatos CSV y Excel para la toma de decisiones gerenciales.
+
+---
+
+## Conclusión del Proyecto
+Se ha implementado un flujo de datos (Pipeline) completo que:
+1. **Obtiene** datos de fuentes heterogéneas (NumPy, CSV, Excel, Web).
+2. **Limpia** errores, nulos y outliers (IQR).
+3. **Transforma** y enriquece la información (Lambda, Binning).
+4. **Analiza** y reporta resultados mediante agrupaciones complejas.
+
+**El dataset final es confiable, estructurado y está listo para ser consumido por modelos de Machine Learning o herramientas de visualización como Power BI.**

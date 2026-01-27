@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 
 # 1. CARGA DE DATOS (Conexión Clase 1 -> Clase 2)
-# Cargamos el archivo binario que creamos con NumPy
 try:
     data_numpy = np.load('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\transacciones_iniciales.npy')
     print("✅ Datos cargados exitosamente desde NumPy.\n")
@@ -16,7 +15,7 @@ df = pd.DataFrame(data_numpy, columns=['ID_Cliente', 'Monto', 'Cantidad'])
 # Convertimos ID_Cliente a entero (NumPy lo guardó como float por la matriz)
 df['ID_Cliente'] = df['ID_Cliente'].astype(int)
 
-# 3. EXPLORACIÓN BÁSICA (AE2)
+# 3. EXPLORACIÓN BÁSICA
 print("--- PRIMEROS 5 REGISTROS (head) ---")
 print(df.head(), "\n")
 
