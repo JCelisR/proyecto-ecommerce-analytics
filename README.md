@@ -4,7 +4,9 @@ Repositorio dedicado al análisis exploratorio, limpieza y transformación de da
 ## Descripción del Proyecto
 Este proyecto consiste en el desarrollo de un flujo de trabajo automatizado para la obtención, limpieza y estructuración de datos de una empresa de e-commerce. El objetivo es transformar datos crudos provenientes de múltiples fuentes (CSV, Excel, Web) en un dataset confiable listo para modelos de Machine Learning y reportes estratégicos.
 
-## 📁 Estructura del Proyecto
+## 📁 Instrucciones para Ejecutar el Proyecto
+
+Para reproducir este flujo de trabajo, ejecute los scripts en el siguiente orden:
 - `clase1_numpy.py`: Generación y fundamentos de arrays.
 - `clase2_panda.py`: Estructuras de datos (Series y DataFrames).
 - `clase3_extraccion.py`: Lectura de fuentes externas (CSV, Excel, Web).
@@ -20,41 +22,80 @@ Los datasets procesados se encuentran en la carpeta `/data`.
 - Pandas / NumPy
 - Openpyxl / Lxml
 
+1. Justificación de Herramientas
+
+NumPy: Se eligió por su rapidez para crear y manejar grandes conjuntos de números, lo que facilita generar datos sintéticos (simulados) de forma eficiente.
+Pandas: Se utilizó para leer, limpiar y organizar los datos en tablas fáciles de trabajar. Permite cargar archivos (CSV, Excel, HTML) y transformar la información para análisis posteriores.
+
+2. Descripción de Datos y Fuentes
+
+    Se creó un conjunto de datos de ventas (DataSet) mediante simulaciones aleatorias para representar transacciones históricas.
+
+    Fuentes externas
+        - Archivo Excel: catálogo de categorías de productos que enriquece cada venta.
+        - Extracción web: tablas públicas de indicadores económicos importadas para dar contexto al desempeño del negocio.
+
+3. Técnicas de Limpieza y Transformación
+
+    Manejo de Valores faltantes: Se aplicó identificación mediante isnull() e imputación con estadísticas de tendencia central (media/mediana para numéricos y moda para categóricos).
+
+    Outliers: Se identificaron y filtraron valores extremos usando el rango intercuartil (IQR), evitando que montos atípicos afecten los análisis.
+
+    Data Wrangling:
+
+        Binning: Segmentación o agrupación de ventas por niveles de gasto.
+
+        Lambdas: Cálculo de impuestos y totales de forma eficiente.
+
+        Agregación: Resumen de métricas mediante groupby() y pivot_table.
+
+4. Decisiones y Desafíos
+
+    Decisión: Se prefirió la mediana para imputar montos porque es menos sensible a valores extremos que la media.
+
+    Desafío: Resolver dependencias opcionales para la extracción web (por ejemplo librerías adicionales) y asegurar que el proceso de carga fuera robusto.
+
+    Integración: Al unir ventas con el catálogo se aplicó un left join para conservar todas las transacciones aunque falte información del catálogo.
+
+5. Resultados y Estado Final
+
+    El dataset quedó normalizado, sin valores nulos y sin outliers extremos. Se exportaron reportes en Excel y CSV listos para usar en herramientas de visualización o en modelos predictivos.
+
 ## Avance por Clases
 ### Clase 1: Cimentación con NumPy
-- Generación de un conjunto de datos ficticio de clientes y transacciones.
+- Generación de un conjunto de datos ficticios de clientes y transacciones.
 - Implementación de operaciones estadísticas básicas para análisis preliminar.
-- Exportación de datos en formato binario (`.npy`) para asegurar la integridad de los tipos de datos.
+- Exportación de datos en formato (`.npy`).
 
 ### Clase 2: Estructuración con Pandas
-- Transformación de arreglos NumPy a **DataFrames**.
+- Transformación de arreglos a **DataFrames**.
 - Exploración de datos usando `.describe()`, `.info()` y `.value_counts()`.
-- Aplicación de **filtros condicionales** para segmentar transacciones de alto valor.
+- Aplicación de **filtros condicionales** para segmentar transacciones.
 - Exportación a formato **CSV** para estandarización de procesos.
 
 ### Clase 3: Extracción Multi-fuente
 - Implementación de `read_csv` con optimización de tipos de datos (`dtype`).
-- Manejo de archivos Excel mediante `read_excel` y la librería `openpyxl`.
+- Manejo de archivos Excel mediante `read_excel` y  `openpyxl`.
 - **Web Scraping** básico: Uso de `read_html` para capturar datos financieros en tiempo real.
-- Aplicación de técnicas de ahorro de memoria (`usecols`) y manejo de codificaciones (`encoding`).
+- Manejo de codificaciones y selección de columnas - (`usecols`)
 
 ### Clase 4: Manejo de Valores Perdidos y Outliers
 - Uso de `isnull().sum()` para dimensionar la falta de datos.
-- Aplicación de la **Mediana** para valores numéricos (Monto) para mitigar el sesgo de valores extremos.
-- Aplicación de la **Moda** para variables discretas (Cantidad).
-- **Tratamiento de Outliers:** Implementación del método del **Rango Intercuartílico (IQR)** para filtrar registros que distorsionan el análisis estadístico.
+- Aplicación de la **Mediana** para montos mitigando el sesgo de valores extremos.
+- Aplicación de la **Moda** para cantidad.
+- Detección y filtrado de outliers con **Rango Intercuartílico (IQR)**.
 - Reducción de ruido en el dataset y creación de `dataset_limpio.csv`.
 
 ### Clase 5: Data Wrangling y Enriquecimiento
-- Segmentación de transacciones en categorías ('Económica', 'Estándar', 'Premium') para facilitar el análisis de marketing.
+- Segmentación de transacciones en categorías ('Económica', 'Estándar', 'Premium') para facilitar el análisis.
 - Uso de funciones **Lambda** y `.apply()` para cálculos dinámicos de impuestos y totales.
-- Renombramiento de columnas y reordenamiento estratégico de filas para mejorar la legibilidad del reporte final.
+- Renombramiento de columnas y reordenamiento estratégico de filas para mejorar el reporte final.
 - Conversión de tipos de datos (`astype`) para asegurar la eficiencia en el procesamiento de grandes volúmenes.
 
 ### Clase 6: Agrupamiento, Pivoteo e Integración Final
-- Uso de `pd.merge()` para consolidar datos de ventas con el catálogo de productos (similares a JOINs en SQL).
-- Implementación de `groupby()` con múltiples funciones estadísticas (`agg`) para extraer métricas de negocio.
-- Creación de **Tablas Pivot** para cruzar categorías de productos con segmentos de precio.
+- Consolidación con `pd.merge()` con el catálogo de productos (leftjoin).
+- Implementación de `groupby()` con funciones estadísticas (`agg`) para extraer métricas clave.
+- Creación de **Tablas Pivot** para análisis cruzado de categorías de productos con segmentos de precio.
 - Generación de reportes finales en formatos CSV y Excel para la toma de decisiones gerenciales.
 
 ---
@@ -66,4 +107,4 @@ Se ha implementado un flujo de datos (Pipeline) completo que:
 3. **Transforma** y enriquece la información (Lambda, Binning).
 4. **Analiza** y reporta resultados mediante agrupaciones complejas.
 
-**El dataset final es confiable, estructurado y está listo para ser consumido por modelos de Machine Learning o herramientas de visualización como Power BI.**
+**El dataset final es confiable, estructurado y está listo para ser consumido por modelos de Machine Learning o herramientas de visualización.**
