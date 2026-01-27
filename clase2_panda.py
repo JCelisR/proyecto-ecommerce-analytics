@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 # 1. CARGA DE DATOS (Conexión Clase 1 -> Clase 2)
+# Cargamos el archivo que creamos con NumPy en clase 1
 try:
     data_numpy = np.load('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\transacciones_iniciales.npy')
     print("✅ Datos cargados exitosamente desde NumPy.\n")

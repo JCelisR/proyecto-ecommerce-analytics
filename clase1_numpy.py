@@ -35,7 +35,7 @@ if not os.path.exists('data'):
 # Columna 0: ID, Columna 1: Monto, Columna 2: Cantidad
 dataset_final = np.column_stack((ids_clientes, montos, cantidades))
 
-# Guardamos en formato .npy (binario de NumPy)
+# GUARDAMOS EN FORMATO .npy (binario de NumPy) para la siguiente clase
 np.save(r'C:\Users\jceli\Bootcamp\proyecto-ecommerce-analytics\data\transacciones_iniciales.npy', dataset_final)
 
 print("✅ Proceso completado: Archivo 'data/transacciones_iniciales.npy' guardado.")

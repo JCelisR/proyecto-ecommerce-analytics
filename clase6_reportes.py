@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 
-# 1. CARGA DE DATOS
+# 1. CARGA DE DATOS 
+# Conexión con Clases anteriores (1 a 5)
 try:
     df_ventas = pd.read_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_final_wrangled.csv', sep=';', encoding='latin1')
     df_productos = pd.read_excel('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\categorias_productos.xlsx')
@@ -18,6 +19,7 @@ df_ventas['ID_Producto'] = np.random.randint(1, 4, size=len(df_ventas))
 df_consolidado = pd.merge(df_ventas, df_productos, on='ID_Producto', how='left')
 
 # 3. AGRUPAMIENTO
+# Calculamos métricas clave por Categoría de Producto
 reporte_categorias = df_consolidado.groupby('Categoria').agg({
     'Total_Con_Impuesto': 'sum',
     'Cliente_ID': 'count',

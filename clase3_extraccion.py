@@ -16,6 +16,7 @@ except FileNotFoundError:
 
 # 2. CARGA DE EXCEL
 try:
+    # Si no tienes un excel real, creamos uno para demostrar la escritura y lectura
     df_categorias = pd.DataFrame({
         'ID_Producto': [1, 2, 3],
         'Categoria': ['Electrónica', 'Hogar', 'Moda']
@@ -29,6 +30,7 @@ except Exception as e:
     print(f"❌ Error con Excel: {e}")
 
 # 3. EXTRACCIÓN WEB (Indicadores Económicos)
+# Extraeremos una tabla de ejemplo de la web, en este caso Wikipedia
 try:
     url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
     tablas = pd.read_html(url)
@@ -42,13 +44,14 @@ except Exception as e:
     
 
 # 4. OPTIMIZACIÓN Y MUESTREO
+# Mostramos el uso de usecols para ahorrar memoria
 print("\n--- Vista rápida del S&P 500 (Primeras 3 filas) ---")
 if not df_sp500.empty:
     print(df_sp500[['Symbol', 'Security', 'Sector']].head(3))
 else:
     print("La tabla está vacía debido al error de extracción.")
 
-# 5. EXPORTACIÓN CONSOLIDADA
+# 5. GUARDAMOS PARA LA SIGUIENTE CLASE (Exportacion)
 df_ventas.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\ventas_consolidadas.csv', index=False, sep=';', encoding='latin1')
 
 print("\n🚀 Datos exportados a 'data/ventas_consolidadas.csv' listos para limpieza.")

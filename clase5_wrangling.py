@@ -11,10 +11,12 @@ except FileNotFoundError:
     exit()
 
 # 2. TRANSFORMACIÓN Y CONVERSIÓN
+# Aseguramos que los tipos de datos sean correctos para cálculos
 df['Monto'] = df['Monto'].astype(float)
 df['Cantidad'] = df['Cantidad'].astype(int)
 
 # 3. DISCRETIZACIÓN / BINNING
+# Clasificamos las ventas según el monto en categorías: Económica, Estándar, Premium
 bins = [0, 300, 700, np.inf]
 labels = ['Económica', 'Estándar', 'Premium']
 df['Categoria_Venta'] = pd.cut(df['Monto'], bins=bins, labels=labels)
@@ -27,18 +29,21 @@ df['Impuesto'] = df['Monto'].apply(lambda x: x * 0.15)
 df['Total_Con_Impuesto'] = df['Monto'] + df['Impuesto']
 
 # 5. MANIPULACIÓN DE ESTRUCTURA
+# Renombramos columnas para que sean más descriptivas
 df = df.rename(columns={
     'Monto': 'Subtotal',
     'ID_Cliente': 'Cliente_ID'
 })
 
 # 6. ORDENAMIENTO
+# Ordenamos por Total de forma descendente para ver las mayores ventas
 df = df.sort_values(by='Total_Con_Impuesto', ascending=False)
 
 # 7. ELIMINACIÓN DE DUPLICADOS RESIDUALES
+# Por si la integración de fuentes generó duplicados nuevos
 df = df.drop_duplicates()
 
-# 8. EXPORTACIÓN FINAL
+# 8. EXPORTACIÓN FINAL PARA ANÁLISIS DE CLASE FINAL
 df.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_final_wrangled.csv', index=False, sep=';', encoding='latin1')
 print("\n--- Muestra del Dataset Transformado ---")
 print(df[['Cliente_ID', 'Subtotal', 'Categoria_Venta', 'Total_Con_Impuesto']].head())
