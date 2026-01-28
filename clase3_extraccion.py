@@ -29,29 +29,30 @@ try:
 except Exception as e:
     print(f"❌ Error con Excel: {e}")
 
-# 3. EXTRACCIÓN WEB (Indicadores Económicos)
+# 3. EXTRACCIÓN WEB (Indicadores IPSA Chile)
 # Extraeremos una tabla de ejemplo de la web, en este caso Wikipedia
 try:
-    url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+    url = "https://es.wikipedia.org/wiki/%C3%8Dndice_de_Precio_Selectivo_de_Acciones"
     tablas = pd.read_html(url)
-    df_sp500 = tablas[0] # La primera tabla es la que nos interesa
-    print(f"✅ Tabla Web extraída exitosamente.")
+    # Seleccionamos la tabla de las empresas que componen el IPSA
+    df_ipsa = tablas[0] 
+    print(f"✅ Tabla del IPSA extraída exitosamente.")
 except Exception as e:
     print(f"⚠️ No se pudo extraer la tabla web: {e}")
-    # Creamos un dataframe vacío con las columnas esperadas
-    df_sp500 = pd.DataFrame(columns=['Symbol', 'Security', 'Sector'])
+    # Creación de respaldo con columnas reales de la página (Empresa, Rubro)
+    df_ipsa = pd.DataFrame(columns=['Empresa', 'Ticker', 'Rubro'])
     print("ℹ️ Usando DataFrame de respaldo vacío para evitar errores.")
-    
 
-# 4. OPTIMIZACIÓN Y MUESTREO
-# Mostramos el uso de usecols para ahorrar memoria
-print("\n--- Vista rápida del S&P 500 (Primeras 3 filas) ---")
-if not df_sp500.empty:
-    print(df_sp500[['Symbol', 'Security', 'Sector']].head(3))
+# 4. MUESTREO DE DATOS
+print("\n--- Vista rápida de empresas IPSA (Primeras 5 filas) ---")
+if not df_ipsa.empty:
+    # Mostramos las columnas típicas de esa tabla de Wikipedia
+    print(df_ipsa.head(5))
 else:
-    print("La tabla está vacía debido al error de extracción.")
+    print("La tabla está vacía.")
 
-# 5. GUARDAMOS PARA LA SIGUIENTE CLASE (Exportacion)
+# 5. EXPORTACIÓN PARA LA SIGUIENTE CLASE
+# Consolidamos las ventas en un nuevo archivo para la Clase 4 (Limpieza)
 df_ventas.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\ventas_consolidadas.csv', index=False, sep=';', encoding='latin1')
 
-print("\n🚀 Datos exportados a 'data/ventas_consolidadas.csv' listos para limpieza.")
+print("\n Datos exportados a 'data/ventas_consolidadas.csv' listos para limpieza.")

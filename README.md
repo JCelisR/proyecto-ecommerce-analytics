@@ -33,7 +33,7 @@ Pandas: Se utilizó para leer, limpiar y organizar los datos en tablas fáciles 
 
     Fuentes externas
         - Archivo Excel: catálogo de categorías de productos que enriquece cada venta.
-        - Extracción web: tablas públicas de indicadores económicos importadas para dar contexto al desempeño del negocio.
+        - Extracción web: tabla pública de las empresas que componen el IPSA, Chile.
 
 3. Técnicas de Limpieza y Transformación
 
@@ -77,7 +77,7 @@ Pandas: Se utilizó para leer, limpiar y organizar los datos en tablas fáciles 
 - Implementación de `read_csv` con optimización de tipos de datos (`dtype`).
 - Manejo de archivos Excel mediante `read_excel` y  `openpyxl`.
 - **Web Scraping** básico: Uso de `read_html` para capturar datos financieros en tiempo real.
-- Manejo de codificaciones y selección de columnas - (`usecols`)
+- Se aplicó `utf-8` y `latin1` para evitar errores de lectura
 
 ### Clase 4: Manejo de Valores Perdidos y Outliers
 - Uso de `isnull().sum()` para dimensionar la falta de datos.
