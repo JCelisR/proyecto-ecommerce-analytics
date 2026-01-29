@@ -33,7 +33,7 @@ Pandas: Se utilizó para leer, limpiar y organizar los datos en tablas fáciles 
 
     Fuentes externas
         - Archivo Excel: catálogo de categorías de productos que enriquece cada venta.
-        - Extracción web: tabla pública de las empresas que componen el IPSA, Chile.
+        - Extracción de Indicadores: Uso de APIs (mindicador.cl) y Web Scraping para integrar el valor del dólar en tiempo real, contextualizando el análisis financiero.
 
 3. Técnicas de Limpieza y Transformación
 
@@ -53,7 +53,7 @@ Pandas: Se utilizó para leer, limpiar y organizar los datos en tablas fáciles 
 
     Decisión: Se prefirió la mediana para imputar montos porque es menos sensible a valores extremos que la media.
 
-    Desafío: Resolver dependencias opcionales para la extracción web (por ejemplo librerías adicionales) y asegurar que el proceso de carga fuera robusto.
+    Desafío: Resolver dependencias opcionales para la extracción web (por ejemplo librerías adicionales) y asegurar que el proceso de carga fuera robusto. Manejo de Bloqueos Web: Se superaron errores de acceso (HTTP 403/429) mediante la implementación de planes de contingencia (datos de respaldo) para asegurar la continuidad del pipeline, se tenía presente usar User_agent también.
 
     Integración: Al unir ventas con el catálogo se aplicó un left join para conservar todas las transacciones aunque falte información del catálogo.
 
@@ -76,7 +76,7 @@ Pandas: Se utilizó para leer, limpiar y organizar los datos en tablas fáciles 
 ### Clase 3: Extracción Multi-fuente
 - Implementación de `read_csv` con optimización de tipos de datos (`dtype`).
 - Manejo de archivos Excel mediante `read_excel` y  `openpyxl`.
-- **Web Scraping** básico: Uso de `read_html` para capturar datos financieros en tiempo real.
+- **Web Scraping** básico: Consumo de APIs y manejo de peticiones mediante requests y urllib para capturar indicadores económicos.
 - Se aplicó `utf-8` y `latin1` para evitar errores de lectura
 
 ### Clase 4: Manejo de Valores Perdidos y Outliers
@@ -87,8 +87,8 @@ Pandas: Se utilizó para leer, limpiar y organizar los datos en tablas fáciles 
 - Reducción de ruido en el dataset y creación de `dataset_limpio.csv`.
 
 ### Clase 5: Data Wrangling y Enriquecimiento
-- Segmentación de transacciones en categorías ('Económica', 'Estándar', 'Premium') para facilitar el análisis.
-- Uso de funciones **Lambda** y `.apply()` para cálculos dinámicos de impuestos y totales.
+- Segmentación de transacciones en categorías de clientes por Segmento Etario (Joven, Adulto, Sénior) y nivel de gasto (Bronce, Plata, Oro).
+- Uso de funciones **Lambda**: Creación de un Score de Actividad normalizado (0-1) para identificar el compromiso del cliente.
 - Renombramiento de columnas y reordenamiento estratégico de filas para mejorar el reporte final.
 - Conversión de tipos de datos (`astype`) para asegurar la eficiencia en el procesamiento de grandes volúmenes.
 
