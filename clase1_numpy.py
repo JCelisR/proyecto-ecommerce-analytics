@@ -1,41 +1,73 @@
 import numpy as np
+import pandas as pd
 import os
 
-# 1. GENERACIÓN DE DATOS FICTICIOS
-# Configuramos la semilla para que los datos sean siempre los mismos al ejecutar
-np.random.seed(42)
+# Configuración del generador de números aleatorios
+rng = np.random.default_rng(seed=42)
+n_clientes = 500
 
-# Simulamos 500 transacciones
-n_registros = 500
+# 1. GENERACIÓN DE DATOS BASE CON ARRAYS
+ids = np.arange(1, n_clientes + 1)
 
-# IDs de Clientes: Generamos 500 IDs aleatorios entre el 1000 y el 1050 (algunos repetirán)
-ids_clientes = np.random.randint(1000, 1051, size=n_registros)
+nombres_base = np.array([
+    "Ana", "Sofía", "Camila", "Valentina", "Isidora", "Martina",
+    "Mateo", "Benjamín", "Tomás", "Vicente", "Lucas", "Joaquín",
+    "Daniela", "Fernanda", "Ignacio", "Gabriel", "Antonia", "Catalina"
+])
 
-# Montos: Distribución normal (Media $500, Desviación $150)
-montos = np.random.normal(500, 150, size=n_registros).round(2)
+apellidos_base = np.array([
+    "González", "Muñoz", "Rojas", "Díaz", "Pérez", "Soto",
+    "Contreras", "Silva", "Martínez", "Sepúlveda", "Torres", "Flores"
+])
 
-# Cantidades: Números enteros entre 1 y 5 productos por compra
-cantidades = np.random.randint(1, 6, size=n_registros)
+# Creamos los nombres completos combinando aleatoriamente
+nombres = rng.choice(nombres_base, size=n_clientes) + " " + rng.choice(apellidos_base, size=n_clientes)
 
-# 2. OPERACIONES MATEMÁTICAS BÁSICAS
-print("--- RESUMEN ESTADÍSTICO INICIAL (NumPy) ---")
-print(f"Total de Ventas: ${np.sum(montos):,.2f}")
-print(f"Ticket Promedio: ${np.mean(montos):,.2f}")
-print(f"Venta Máxima: ${np.max(montos)}")
-print(f"Desviación Estándar de Ventas: ${np.std(montos):,.2f}")
-print(f"Total de productos vendidos: {np.sum(cantidades)}")
-print("-" * 40)
+# Ciudades con probabilidades específicas (Chile)
+ciudades = np.array(["Santiago", "Valparaíso", "Concepción", "La Serena", "Antofagasta", "Temuco", "Rancagua"])
+ciudad = rng.choice(ciudades, size=n_clientes, p=[0.45, 0.12, 0.14, 0.08, 0.08, 0.08, 0.05])
 
-# 3. ESTRUCTURACIÓN Y GUARDADO
-# Creamos una carpeta 'data' si no existe
+# 2. CÁLCULOS ESTADÍSTICOS VECTORIZADOS
+# Edad: Distribución normal (promedio 35 años)
+edad = np.clip(rng.normal(loc=35, scale=12, size=n_clientes), 18, 70).round(0).astype(int)
+
+# Total_Compras: Distribución de Poisson (promedio 4.5 compras)
+total_compras = rng.poisson(lam=4.5, size=n_clientes)
+total_compras = np.clip(total_compras, 0, 35)
+
+# Ticket promedio y Monto Total con ruido aleatorio
+ticket_promedio = rng.lognormal(mean=np.log(25000), sigma=0.55, size=n_clientes)
+monto_total = (total_compras * ticket_promedio) + rng.normal(0, 5000, size=n_clientes)
+monto_total = np.clip(monto_total, 0, None).round(0).astype(int)
+
+# 3. OPERACIONES MATEMÁTICAS BÁSICAS (NumPy)
+print(f"--- Estadísticas Iniciales (NumPy) ---")
+print(f"Monto Total de Ventas: ${np.sum(monto_total)}")
+print(f"Promedio de Edad de Clientes: {np.mean(edad):.1f} años")
+print(f"Máximo de compras por un cliente: {np.max(total_compras)}")
+
+# 4. ESTRUCTURACIÓN Y GUARDADO
+# Creamos la carpeta 'data' si no existe
 if not os.path.exists('data'):
     os.makedirs('data')
 
-# Combinamos los arrays en una sola matriz para transporte de datos
-# Columna 0: ID, Columna 1: Monto, Columna 2: Cantidad
-dataset_final = np.column_stack((ids_clientes, montos, cantidades))
+# Creamos un DataFrame para visualización y exportación
+clientes = pd.DataFrame({
+    "ID": ids,
+    "Nombre": nombres,
+    "Edad": edad,
+    "Ciudad": ciudad,
+    "Total_Compras": total_compras,
+    "Monto_Total": monto_total
+})
 
-# GUARDAMOS EN FORMATO .npy (binario de NumPy) para la siguiente clase
-np.save(r'C:\Users\jceli\Bootcamp\proyecto-ecommerce-analytics\data\transacciones_iniciales.npy', dataset_final)
+# 5. GUARDAR Y PREPARAR PARA LA SIGUIENTE CLASE
+# Guardamos en formato binario .npy para la siguiente clase
+np.save(r'C:\Users\jceli\Bootcamp\proyecto-ecommerce-analytics\data\transacciones_iniciales.npy', monto_total)
 
-print("✅ Proceso completado: Archivo 'data/transacciones_iniciales.npy' guardado.")
+# También exportamos el CSV inicial para la siguiente clase
+clientes.to_csv(r'C:\Users\jceli\Bootcamp\proyecto-ecommerce-analytics\data\dataset_transacciones.csv', index=False)
+
+print("\n✅ Proceso completado: Archivo 'data\transacciones_iniciales.npy' guardado.")
+print("\n--- Primeros 5 registros del DataFrame ---")
+print(clientes.head())

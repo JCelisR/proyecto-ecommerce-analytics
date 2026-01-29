@@ -1,501 +1,501 @@
-ID_Cliente;Monto;Cantidad
-1038;604.86;2
-1028;589.98;2
-1014;427.81;4
-1042;185.93;3
-1007;436.99;1
-1020;520.88;3
-1038;500.27;5
-1018;613.39;4
-1022;790.03;3
-1010;562.08;2
-1010;585.17;5
-1023;522.23;5
-1035;675.87;3
-1039;579.71;3
-1023;612.37;4
-1002;771.34;1
-1021;534.05;3
-1001;459.36;3
-1023;566.94;2
-1043;670.44;5
-1029;575.21;1
-1037;659.1;2
-1001;399.65;4
-1020;369.79;4
-1032;418.24;3
-1011;309.89;3
-1021;516.54;4
-1043;435.5;3
-1024;684.53;1
-1048;306.32;3
-1026;733.24;5
-1041;352.82;3
-1027;314.27;2
-1015;376.3;1
-1014;792.69;2
-1046;493.99;2
-1050;579.42;5
-1043;472.42;1
-1002;486.49;1
-1036;424.12;1
-1050;507.61;1
-1006;574.19;1
-1020;751.75;5
-1008;218.83;3
-1038;741.62;2
-1017;579.19;1
-1003;444.84;3
-1024;417.84;3
-1013;656.55;2
-1049;534.35;5
-1008;269.89;4
-1025;554.46;4
-1001;671.66;3
-1019;628.68;2
-1027;405.97;4
-1046;298.7;3
-1006;451.1;5
-1043;988.1;4
-1007;268.25;3
-1046;373.59;3
-1034;558.81;1
-1013;481.32;5
-1016;469.97;1
-1035;803.71;2
-1049;372.01;1
-1039;497.86;1
-1003;530.29;4
-1001;379.29;3
-1005;283.9;5
-1041;540.4;1
-1003;772.05;5
-1028;560.69;1
-1017;513.51;2
-1025;512.41;1
-1043;461.24;4
-1033;677.52;3
-1009;424.18;2
-1035;296.48;1
-1013;262.75;5
-1030;511.85;2
-1047;659.1;2
-1014;535.62;1
-1007;452.39;2
-1013;568.77;5
-1022;527.93;2
-1039;623.93;5
-1020;698.98;1
-1015;356.84;3
-1044;149.06;2
-1017;447.27;3
-1046;347.1;5
-1023;624.79;2
-1025;391.35;4
-1024;218.63;3
-1044;413.87;2
-1040;276.2;3
-1028;738.52;2
-1014;570.75;1
-1044;597.13;3
-1000;580.4;4
-1024;626.03;4
-1006;670.0;5
-1008;419.04;2
-1023;287.01;3
-1000;372.96;5
-1043;493.21;3
-1007;115.35;2
-1023;671.41;4
-1010;215.49;1
-1050;589.86;4
-1016;474.79;5
-1007;542.78;1
-1034;429.21;5
-1034;532.58;2
-1032;429.22;1
-1004;416.57;5
-1041;365.41;2
-1038;728.87;4
-1040;555.04;2
-1027;531.42;3
-1006;368.67;2
-1008;464.77;2
-1007;351.92;3
-1011;426.33;5
-1033;318.63;5
-1032;738.37;2
-1047;386.46;3
-1022;368.74;3
-1023;301.16;4
-1036;384.32;5
-1034;425.77;1
-1043;492.58;5
-1039;403.2;5
-1021;259.91;4
-1026;272.81;1
-1034;601.95;4
-1000;481.58;1
-1034;597.33;2
-1036;617.04;1
-1046;522.66;4
-1013;315.24;5
-1002;528.44;1
-1000;709.94;1
-1004;432.89;3
-1025;551.09;5
-1013;497.93;2
-1038;705.86;4
-1026;398.33;2
-1008;673.03;5
-1014;443.75;1
-1014;395.88;1
-1025;516.48;5
-1041;551.37;1
-1012;786.73;1
-1050;547.93;1
-1031;528.99;4
-1038;739.42;4
-1048;590.16;3
-1031;403.36;2
-1003;703.4;5
-1029;389.06;5
-1036;402.61;5
-1022;372.72;3
-1038;359.56;4
-1044;549.98;3
-1014;461.31;5
-1042;-21.73;2
-1028;459.76;1
-1035;422.31;4
-1012;633.92;4
-1031;415.51;3
-1006;880.89;4
-1050;709.52;5
-1021;441.51;5
-1027;672.44;3
-1001;578.78;5
-1041;535.02;2
-1044;620.4;3
-1005;508.11;2
-1027;536.05;1
-1027;623.5;2
-1043;807.87;1
-1043;537.68;1
-1019;431.93;2
-1029;195.62;3
-1010;794.2;5
-1027;460.51;5
-1024;580.22;1
-1038;785.89;1
-1032;534.14;3
-1000;470.8;4
-1026;712.95;2
-1012;569.11;1
-1040;587.92;5
-1002;271.53;3
-1038;680.89;2
-1005;556.34;3
-1007;294.26;2
-1026;572.76;2
-1008;190.62;1
-1036;851.3;3
-1032;334.72;3
-1050;741.77;5
-1041;378.06;5
-1043;584.03;1
-1023;363.18;1
-1014;649.57;4
-1031;464.7;5
-1031;570.17;2
-1023;502.26;3
-1040;295.15;1
-1048;575.62;3
-1048;424.51;3
-1011;656.8;4
-1038;464.62;5
-1001;488.49;1
-1002;752.44;3
-1048;857.25;1
-1036;617.91;2
-1048;456.93;4
-1016;443.8;2
-1048;377.2;1
-1001;406.21;1
-1001;458.96;5
-1027;794.64;3
-1022;470.42;3
-1036;316.09;2
-1031;506.25;4
-1032;526.72;3
-1000;505.35;5
-1018;619.95;2
-1001;510.35;2
-1043;615.31;5
-1025;382.95;4
-1031;767.11;5
-1005;537.87;4
-1031;560.03;5
-1003;382.32;5
-1010;570.77;1
-1016;597.66;2
-1037;324.53;5
-1023;251.14;5
-1004;544.05;3
-1033;426.68;2
-1005;538.99;3
-1021;306.34;2
-1010;265.92;3
-1047;531.0;5
-1015;447.53;5
-1032;183.4;1
-1008;701.46;3
-1005;303.85;4
-1015;886.0;1
-1028;406.4;3
-1002;560.23;3
-1019;747.04;1
-1035;721.92;5
-1018;797.92;3
-1025;271.54;5
-1002;329.62;1
-1018;533.9;5
-1019;625.96;2
-1031;498.32;4
-1006;254.3;3
-1040;574.49;4
-1032;470.86;5
-1039;469.06;3
-1038;158.31;5
-1017;619.62;2
-1039;521.78;1
-1000;769.27;3
-1010;488.82;2
-1027;584.95;2
-1024;624.77;3
-1049;238.08;5
-1022;892.5;2
-1030;435.38;4
-1029;574.18;2
-1041;596.09;5
-1034;377.78;5
-1006;777.05;4
-1015;539.89;2
-1025;467.98;5
-1047;520.78;3
-1048;614.64;1
-1001;501.62;1
-1000;632.29;1
-1047;247.27;2
-1011;387.8;4
-1004;179.18;5
-1036;799.55;3
-1031;797.6;3
-1008;593.99;2
-1040;348.11;1
-1034;858.48;2
-1018;409.34;4
-1047;468.02;4
-1015;523.93;5
-1002;567.73;5
-1019;596.57;4
-1023;602.59;4
-1032;478.32;4
-1023;600.22;2
-1010;471.62;4
-1048;586.9;3
-1007;574.59;1
-1035;614.43;4
-1037;595.7;1
-1039;433.64;2
-1019;568.81;1
-1034;598.01;2
-1047;306.33;3
-1024;458.89;2
-1034;591.22;2
-1024;756.39;5
-1028;623.74;4
-1017;765.86;4
-1045;440.24;3
-1017;537.53;3
-1001;620.86;4
-1034;151.05;5
-1015;726.62;4
-1040;220.86;5
-1035;649.54;3
-1032;603.02;1
-1003;149.06;3
-1032;156.64;3
-1013;714.87;2
-1020;682.21;2
-1047;367.87;2
-1019;367.72;2
-1007;576.89;5
-1006;498.09;4
-1002;658.16;1
-1016;571.94;3
-1032;737.45;5
-1047;645.51;1
-1011;608.12;5
-1050;447.18;5
-1021;436.2;3
-1021;492.24;4
-1045;776.14;2
-1029;439.06;4
-1037;539.08;3
-1037;163.28;3
-1044;601.37;3
-1050;838.58;1
-1007;359.95;4
-1026;976.17;4
-1026;527.34;5
-1033;114.06;5
-1020;442.17;5
-1029;699.57;3
-1032;799.9;4
-1027;607.71;3
-1046;735.14;1
-1032;323.33;5
-1004;397.96;3
-1047;248.08;3
-1018;409.24;1
-1003;614.29;2
-1034;531.9;4
-1048;630.18;2
-1016;359.52;5
-1043;368.67;3
-1027;530.69;1
-1029;409.6;1
-1028;695.28;4
-1045;405.89;2
-1005;425.69;4
-1034;562.83;3
-1040;441.61;4
-1036;314.76;1
-1023;335.1;1
-1028;580.66;5
-1048;296.19;5
-1045;709.57;3
-1030;396.44;2
-1034;592.43;4
-1032;405.44;3
-1020;362.71;5
-1031;536.92;4
-1022;657.77;5
-1032;462.89;4
-1002;490.18;2
-1017;621.11;3
-1024;626.08;4
-1041;494.23;1
-1030;433.48;1
-1002;512.4;4
-1039;471.36;4
-1045;546.95;4
-1023;320.86;1
-1049;541.58;1
-1031;392.25;4
-1046;635.88;5
-1021;399.13;5
-1022;401.73;2
-1001;566.81;3
-1026;502.13;5
-1041;841.5;1
-1001;255.6;5
-1025;516.48;2
-1016;669.45;2
-1039;413.25;3
-1032;363.42;5
-1008;369.37;1
-1042;258.21;1
-1047;702.46;4
-1038;450.56;1
-1028;432.8;3
-1041;181.39;3
-1025;284.94;1
-1034;719.81;1
-1049;545.47;4
-1024;674.98;1
-1023;656.0;4
-1012;349.91;4
-1006;864.48;1
-1035;792.46;2
-1044;415.44;2
-1019;-35.23;4
-1000;446.52;1
-1007;535.74;2
-1045;414.84;1
-1015;466.77;1
-1013;375.7;1
-1011;638.25;5
-1050;509.54;1
-1022;642.73;5
-1014;683.33;4
-1027;173.85;2
-1033;384.42;2
-1001;406.4;2
-1031;885.71;2
-1022;522.35;2
-1021;621.88;2
-1050;217.9;2
-1024;521.48;4
-1021;646.74;1
-1021;629.29;3
-1048;593.51;5
-1041;501.95;3
-1005;509.24;3
-1014;246.01;1
-1042;364.92;1
-1036;534.64;1
-1032;392.6;2
-1007;603.33;4
-1043;570.02;2
-1043;705.11;4
-1004;643.74;4
-1038;534.09;3
-1003;612.2;3
-1005;650.77;4
-1044;423.88;4
-1031;450.6;2
-1029;485.48;2
-1046;428.67;3
-1034;652.35;1
-1039;405.9;4
-1015;687.75;2
-1012;444.95;3
-1049;570.86;2
-1041;524.96;4
-1029;353.6;4
-1018;497.02;5
-1016;550.05;1
-1018;490.36;5
-1027;298.59;3
-1025;755.21;2
-1036;513.15;3
-1025;380.85;4
-1022;743.12;5
-1008;592.61;5
-1011;319.97;5
-1000;343.33;3
-1000;466.64;4
-1046;544.6;2
-1033;593.42;2
-1031;642.53;3
-1047;580.94;5
-1024;702.01;1
-1039;519.02;3
-1044;386.05;3
-1000;499.5;4
-1015;489.65;2
-1038;113.27;3
-1004;415.79;3
-1021;547.13;5
-1028;436.37;5
-1002;403.07;1
-1011;636.71;4
-1025;362.52;1
-1015;606.74;5
-1050;300.09;2
-1036;914.11;5
-1021;467.65;4
-1028;451.51;5
-1013;671.46;4
+ID;Nombre;Edad;Ciudad;Total_Compras;Monto_Total;Valor_Dolar_Referencia;Fuente_Dolar
+1;Sofía Muñoz;26;La Serena;3;86427;857.95;mindicador.cl
+2;Fernanda Silva;46;Temuco;5;114303;857.95;mindicador.cl
+3;Joaquín Flores;35;Temuco;3;43599;857.95;mindicador.cl
+4;Benjamín Torres;32;Valparaíso;6;101303;857.95;mindicador.cl
+5;Benjamín Díaz;34;Valparaíso;3;144745;857.95;mindicador.cl
+6;Gabriel Soto;38;Antofagasta;4;106510;857.95;mindicador.cl
+7;Sofía Contreras;42;Santiago;6;83749;857.95;mindicador.cl
+8;Daniela Rojas;23;Antofagasta;4;115258;857.95;mindicador.cl
+9;Valentina Díaz;23;Valparaíso;3;76806;857.95;mindicador.cl
+10;Sofía Rojas;48;Santiago;8;1333744;857.95;mindicador.cl
+11;Vicente Flores;30;Santiago;5;150627;857.95;mindicador.cl
+12;Catalina Martínez;18;Antofagasta;6;121573;857.95;mindicador.cl
+13;Fernanda Torres;40;Santiago;8;436526;857.95;mindicador.cl
+14;Fernanda Sepúlveda;41;Santiago;5;41234;857.95;mindicador.cl
+15;Daniela Flores;18;Santiago;2;52368;857.95;mindicador.cl
+16;Ignacio Muñoz;38;Santiago;4;295672;857.95;mindicador.cl
+17;Vicente Torres;44;Santiago;6;141564;857.95;mindicador.cl
+18;Camila González;39;La Serena;5;47001;857.95;mindicador.cl
+19;Gabriel Soto;43;Santiago;5;95817;857.95;mindicador.cl
+20;Tomás Silva;18;Antofagasta;3;171873;857.95;mindicador.cl
+21;Vicente Pérez;39;Antofagasta;4;125113;857.95;mindicador.cl
+22;Mateo Muñoz;31;Santiago;3;45041;857.95;mindicador.cl
+23;Valentina Rojas;29;Santiago;8;137927;857.95;mindicador.cl
+24;Antonia Sepúlveda;45;Concepción;4;73085;857.95;mindicador.cl
+25;Ignacio Díaz;53;Santiago;6;178627;857.95;mindicador.cl
+26;Joaquín Díaz;57;Santiago;2;104732;857.95;mindicador.cl
+27;Benjamín Flores;51;Rancagua;5;219889;857.95;mindicador.cl
+28;Ignacio Muñoz;34;Rancagua;7;220161;857.95;mindicador.cl
+29;Vicente Torres;39;La Serena;3;27943;857.95;mindicador.cl
+30;Benjamín Flores;44;Santiago;7;82510;857.95;mindicador.cl
+31;Tomás Silva;36;Concepción;5;170439;857.95;mindicador.cl
+32;Isidora Muñoz;37;Concepción;6;68093;857.95;mindicador.cl
+33;Sofía Muñoz;45;Santiago;9;211352;857.95;mindicador.cl
+34;Vicente Díaz;34;Concepción;5;152189;857.95;mindicador.cl
+35;Gabriel Contreras;26;Santiago;7;100129;857.95;mindicador.cl
+36;Sofía Muñoz;30;Santiago;3;46674;857.95;mindicador.cl
+37;Gabriel Soto;43;Valparaíso;4;104219;857.95;mindicador.cl
+38;Ignacio Muñoz;35;Santiago;2;62024;857.95;mindicador.cl
+39;Isidora Contreras;39;Santiago;4;166486;857.95;mindicador.cl
+40;Joaquín González;43;Antofagasta;7;242135;857.95;mindicador.cl
+41;Camila Martínez;31;Rancagua;4;106925;857.95;mindicador.cl
+42;Fernanda González;44;Valparaíso;6;100265;857.95;mindicador.cl
+43;Daniela Rojas;40;Antofagasta;6;84610;857.95;mindicador.cl
+44;Mateo Rojas;20;Rancagua;2;44357;857.95;mindicador.cl
+45;Sofía Sepúlveda;52;Santiago;1;33233;857.95;mindicador.cl
+46;Catalina González;29;Santiago;2;64164;857.95;mindicador.cl
+47;Tomás Soto;18;Santiago;9;66194;857.95;mindicador.cl
+48;Antonia Silva;22;Santiago;4;59436;857.95;mindicador.cl
+49;Daniela Contreras;23;La Serena;5;250520;857.95;mindicador.cl
+50;Ignacio Martínez;36;Santiago;5;131071;857.95;mindicador.cl
+51;Fernanda Sepúlveda;32;Valparaíso;6;65689;857.95;mindicador.cl
+52;Valentina Pérez;31;Santiago;4;362249;857.95;mindicador.cl
+53;Mateo Sepúlveda;42;Santiago;2;45965;857.95;mindicador.cl
+54;Tomás Díaz;39;Temuco;7;212648;857.95;mindicador.cl
+55;Tomás Flores;39;Santiago;6;180447;857.95;mindicador.cl
+56;Ana Contreras;40;Santiago;7;135464;857.95;mindicador.cl
+57;Vicente Martínez;42;Santiago;2;32535;857.95;mindicador.cl
+58;Camila Torres;18;Valparaíso;3;237942;857.95;mindicador.cl
+59;Fernanda Sepúlveda;31;Concepción;4;179167;857.95;mindicador.cl
+60;Daniela Torres;18;Valparaíso;6;237199;857.95;mindicador.cl
+61;Antonia Contreras;35;Santiago;5;172945;857.95;mindicador.cl
+62;Fernanda González;35;Santiago;8;111464;857.95;mindicador.cl
+63;Mateo Soto;48;Antofagasta;8;403211;857.95;mindicador.cl
+64;Catalina Rojas;49;Concepción;6;96146;857.95;mindicador.cl
+65;Benjamín Torres;37;Concepción;3;91226;857.95;mindicador.cl
+66;Martina Rojas;29;Concepción;5;50267;857.95;mindicador.cl
+67;Antonia Rojas;41;La Serena;3;29806;857.95;mindicador.cl
+68;Mateo Rojas;29;Santiago;1;29823;857.95;mindicador.cl
+69;Sofía Silva;35;Santiago;2;36005;857.95;mindicador.cl
+70;Tomás Contreras;47;Valparaíso;4;31037;857.95;mindicador.cl
+71;Ignacio Flores;28;Santiago;2;58250;857.95;mindicador.cl
+72;Valentina Pérez;45;Antofagasta;4;322269;857.95;mindicador.cl
+73;Tomás Díaz;43;Valparaíso;7;379422;857.95;mindicador.cl
+74;Camila González;24;La Serena;1;24578;857.95;mindicador.cl
+75;Daniela González;47;Antofagasta;2;52355;857.95;mindicador.cl
+76;Tomás Pérez;43;Valparaíso;6;242674;857.95;mindicador.cl
+77;Martina Flores;36;Temuco;3;134992;857.95;mindicador.cl
+78;Isidora Contreras;26;Concepción;3;64846;857.95;mindicador.cl
+79;Lucas Torres;25;Antofagasta;4;104030;857.95;mindicador.cl
+80;Daniela Muñoz;29;Santiago;2;56185;857.95;mindicador.cl
+81;Antonia Muñoz;42;Valparaíso;8;276772;857.95;mindicador.cl
+82;Benjamín Torres;24;Valparaíso;4;88528;857.95;mindicador.cl
+83;Camila Muñoz;40;Santiago;8;184300;857.95;mindicador.cl
+84;Ignacio González;20;Santiago;6;328573;857.95;mindicador.cl
+85;Joaquín Pérez;33;Temuco;7;344709;857.95;mindicador.cl
+86;Daniela Flores;36;Concepción;3;95731;857.95;mindicador.cl
+87;Sofía Martínez;64;Santiago;7;451909;857.95;mindicador.cl
+88;Martina Muñoz;18;Santiago;5;101839;857.95;mindicador.cl
+89;Fernanda Torres;53;Santiago;2;108350;857.95;mindicador.cl
+90;Ignacio Torres;37;Santiago;3;96544;857.95;mindicador.cl
+91;Benjamín Sepúlveda;40;Temuco;2;301945;857.95;mindicador.cl
+92;Ignacio Torres;36;Santiago;4;50116;857.95;mindicador.cl
+93;Gabriel Rojas;40;Santiago;5;86792;857.95;mindicador.cl
+94;Mateo Flores;33;Concepción;2;68599;857.95;mindicador.cl
+95;Antonia Díaz;52;Santiago;4;122811;857.95;mindicador.cl
+96;Martina Sepúlveda;30;Santiago;2;140857;857.95;mindicador.cl
+97;Isidora Contreras;49;Concepción;5;88173;857.95;mindicador.cl
+98;Daniela Sepúlveda;27;Concepción;5;203985;857.95;mindicador.cl
+99;Joaquín Silva;34;Rancagua;6;283508;857.95;mindicador.cl
+100;Camila Silva;22;Concepción;3;109044;857.95;mindicador.cl
+101;Ignacio Silva;40;Valparaíso;5;84892;857.95;mindicador.cl
+102;Valentina Sepúlveda;52;La Serena;6;314147;857.95;mindicador.cl
+103;Ignacio Martínez;34;Temuco;3;145527;857.95;mindicador.cl
+104;Ana Muñoz;33;La Serena;3;104280;857.95;mindicador.cl
+105;Ignacio Sepúlveda;22;Rancagua;5;135963;857.95;mindicador.cl
+106;Ignacio Contreras;32;La Serena;6;174363;857.95;mindicador.cl
+107;Ignacio Díaz;18;Antofagasta;3;75888;857.95;mindicador.cl
+108;Joaquín Contreras;24;Santiago;7;248703;857.95;mindicador.cl
+109;Tomás Flores;38;La Serena;3;74942;857.95;mindicador.cl
+110;Daniela Torres;51;Santiago;1;15117;857.95;mindicador.cl
+111;Isidora Torres;69;Valparaíso;2;27563;857.95;mindicador.cl
+112;Ignacio Soto;28;Concepción;2;32671;857.95;mindicador.cl
+113;Lucas Sepúlveda;52;Rancagua;1;27309;857.95;mindicador.cl
+114;Tomás Pérez;38;Rancagua;3;75159;857.95;mindicador.cl
+115;Vicente Martínez;33;Santiago;2;60053;857.95;mindicador.cl
+116;Lucas Silva;40;La Serena;7;224345;857.95;mindicador.cl
+117;Ana Rojas;36;La Serena;8;136387;857.95;mindicador.cl
+118;Camila Díaz;36;Santiago;4;215176;857.95;mindicador.cl
+119;Isidora González;30;Santiago;5;112218;857.95;mindicador.cl
+120;Camila Muñoz;18;Santiago;2;40647;857.95;mindicador.cl
+121;Benjamín Soto;18;La Serena;4;132910;857.95;mindicador.cl
+122;Daniela Soto;43;Valparaíso;5;38376;857.95;mindicador.cl
+123;Joaquín Muñoz;32;Rancagua;4;73665;857.95;mindicador.cl
+124;Tomás Soto;28;Valparaíso;7;297134;857.95;mindicador.cl
+125;Gabriel Silva;35;Rancagua;5;48915;857.95;mindicador.cl
+126;Lucas Rojas;45;Santiago;5;235402;857.95;mindicador.cl
+127;Sofía Pérez;37;Antofagasta;3;167258;857.95;mindicador.cl
+128;Fernanda Pérez;27;Santiago;6;119686;857.95;mindicador.cl
+129;Lucas Contreras;50;Valparaíso;3;88953;857.95;mindicador.cl
+130;Joaquín Pérez;54;Antofagasta;4;199345;857.95;mindicador.cl
+131;Lucas Martínez;41;Temuco;6;117542;857.95;mindicador.cl
+132;Vicente Díaz;47;Antofagasta;3;128908;857.95;mindicador.cl
+133;Sofía Soto;50;Santiago;2;40595;857.95;mindicador.cl
+134;Lucas Pérez;49;Santiago;5;97963;857.95;mindicador.cl
+135;Ignacio Rojas;42;Santiago;4;59481;857.95;mindicador.cl
+136;Martina Martínez;42;Santiago;3;95853;857.95;mindicador.cl
+137;Lucas Rojas;41;Concepción;5;228832;857.95;mindicador.cl
+138;Ana Díaz;22;La Serena;6;143559;857.95;mindicador.cl
+139;Mateo Sepúlveda;43;La Serena;5;63124;857.95;mindicador.cl
+140;Benjamín Flores;19;Antofagasta;7;83225;857.95;mindicador.cl
+141;Catalina Martínez;25;La Serena;4;122536;857.95;mindicador.cl
+142;Valentina Torres;51;Antofagasta;5;347936;857.95;mindicador.cl
+143;Isidora Torres;45;Santiago;4;122993;857.95;mindicador.cl
+144;Benjamín Soto;53;Santiago;6;124824;857.95;mindicador.cl
+145;Catalina Sepúlveda;32;Concepción;2;71955;857.95;mindicador.cl
+146;Gabriel Díaz;21;Antofagasta;7;146872;857.95;mindicador.cl
+147;Ana Soto;32;Santiago;5;101163;857.95;mindicador.cl
+148;Isidora Contreras;36;Valparaíso;3;44429;857.95;mindicador.cl
+149;Ignacio Flores;36;Concepción;4;215241;857.95;mindicador.cl
+150;Sofía Torres;49;Santiago;2;18509;857.95;mindicador.cl
+151;Gabriel Soto;31;Santiago;5;189609;857.95;mindicador.cl
+152;Martina Silva;39;Temuco;5;98425;857.95;mindicador.cl
+153;Antonia Rojas;23;Concepción;3;60187;857.95;mindicador.cl
+154;Martina Sepúlveda;40;Santiago;3;182452;857.95;mindicador.cl
+155;Benjamín Contreras;35;Antofagasta;3;44044;857.95;mindicador.cl
+156;Joaquín Contreras;26;Santiago;1;17258;857.95;mindicador.cl
+157;Camila Sepúlveda;32;Antofagasta;6;149525;857.95;mindicador.cl
+158;Lucas Silva;33;Santiago;3;97067;857.95;mindicador.cl
+159;Vicente González;32;Concepción;6;109010;857.95;mindicador.cl
+160;Ignacio Díaz;56;Santiago;4;26527;857.95;mindicador.cl
+161;Catalina Rojas;34;Santiago;4;65783;857.95;mindicador.cl
+162;Joaquín Martínez;32;Temuco;4;201850;857.95;mindicador.cl
+163;Benjamín González;18;Santiago;3;83855;857.95;mindicador.cl
+164;Benjamín Rojas;24;Santiago;4;123755;857.95;mindicador.cl
+165;Benjamín Silva;32;Santiago;0;1751;857.95;mindicador.cl
+166;Ignacio Martínez;27;La Serena;4;73809;857.95;mindicador.cl
+167;Martina Contreras;52;Antofagasta;8;500959;857.95;mindicador.cl
+168;Valentina Torres;33;Rancagua;7;155662;857.95;mindicador.cl
+169;Mateo Flores;50;Santiago;2;39306;857.95;mindicador.cl
+170;Ana Muñoz;36;Santiago;4;185450;857.95;mindicador.cl
+171;Sofía Flores;35;Santiago;7;117552;857.95;mindicador.cl
+172;Sofía Silva;34;Concepción;9;167098;857.95;mindicador.cl
+173;Fernanda Silva;35;Rancagua;4;98255;857.95;mindicador.cl
+174;Fernanda Muñoz;56;Concepción;9;218391;857.95;mindicador.cl
+175;Daniela Silva;18;Concepción;4;125233;857.95;mindicador.cl
+176;Tomás Martínez;18;Santiago;3;233940;857.95;mindicador.cl
+177;Daniela Contreras;28;Temuco;8;237786;857.95;mindicador.cl
+178;Camila Muñoz;35;Valparaíso;1;6430;857.95;mindicador.cl
+179;Antonia Contreras;43;Santiago;4;119994;857.95;mindicador.cl
+180;Vicente Flores;41;Santiago;4;100172;857.95;mindicador.cl
+181;Antonia Martínez;30;Santiago;5;127936;857.95;mindicador.cl
+182;Camila Muñoz;47;Santiago;7;200149;857.95;mindicador.cl
+183;Tomás Flores;47;Santiago;4;99309;857.95;mindicador.cl
+184;Daniela Flores;37;Valparaíso;6;133934;857.95;mindicador.cl
+185;Tomás Rojas;47;Concepción;3;114478;857.95;mindicador.cl
+186;Tomás Sepúlveda;38;Santiago;3;54928;857.95;mindicador.cl
+187;Camila Pérez;28;Santiago;8;121661;857.95;mindicador.cl
+188;Mateo Silva;43;Rancagua;3;388775;857.95;mindicador.cl
+189;Isidora Soto;36;La Serena;4;65099;857.95;mindicador.cl
+190;Martina Sepúlveda;35;Valparaíso;4;102301;857.95;mindicador.cl
+191;Daniela Flores;53;Santiago;4;51277;857.95;mindicador.cl
+192;Joaquín Sepúlveda;18;Temuco;6;156994;857.95;mindicador.cl
+193;Lucas Flores;18;Santiago;1;18754;857.95;mindicador.cl
+194;Mateo Flores;21;Santiago;2;35947;857.95;mindicador.cl
+195;Catalina Muñoz;31;Temuco;5;219831;857.95;mindicador.cl
+196;Sofía Díaz;32;Valparaíso;3;96004;857.95;mindicador.cl
+197;Mateo Martínez;18;La Serena;7;245646;857.95;mindicador.cl
+198;Camila Silva;23;Concepción;3;18864;857.95;mindicador.cl
+199;Mateo González;25;Concepción;1;62082;857.95;mindicador.cl
+200;Catalina Muñoz;64;Santiago;4;42180;857.95;mindicador.cl
+201;Mateo Contreras;57;Santiago;6;342264;857.95;mindicador.cl
+202;Antonia Silva;30;Santiago;7;302877;857.95;mindicador.cl
+203;Tomás Rojas;31;Santiago;4;129301;857.95;mindicador.cl
+204;Daniela Rojas;21;Temuco;6;90057;857.95;mindicador.cl
+205;Tomás Muñoz;18;Santiago;10;261664;857.95;mindicador.cl
+206;Isidora Contreras;34;Valparaíso;2;33501;857.95;mindicador.cl
+207;Fernanda González;23;Antofagasta;6;158417;857.95;mindicador.cl
+208;Catalina Contreras;34;La Serena;8;176337;857.95;mindicador.cl
+209;Isidora Soto;18;Santiago;10;82407;857.95;mindicador.cl
+210;Ignacio Soto;26;Valparaíso;3;133985;857.95;mindicador.cl
+211;Isidora Martínez;37;Rancagua;5;111866;857.95;mindicador.cl
+212;Daniela Contreras;39;Concepción;6;109197;857.95;mindicador.cl
+213;Ignacio Martínez;40;Antofagasta;7;128371;857.95;mindicador.cl
+214;Tomás Sepúlveda;19;Temuco;5;156582;857.95;mindicador.cl
+215;Fernanda Flores;45;La Serena;8;126845;857.95;mindicador.cl
+216;Isidora Sepúlveda;25;Santiago;9;68242;857.95;mindicador.cl
+217;Sofía Contreras;43;Valparaíso;4;121409;857.95;mindicador.cl
+218;Sofía Soto;35;Santiago;5;166427;857.95;mindicador.cl
+219;Tomás Rojas;18;Concepción;5;110395;857.95;mindicador.cl
+220;Antonia Silva;31;Rancagua;5;65478;857.95;mindicador.cl
+221;Camila Muñoz;39;Valparaíso;4;115199;857.95;mindicador.cl
+222;Tomás Flores;42;Santiago;4;35877;857.95;mindicador.cl
+223;Daniela Torres;33;Santiago;5;69873;857.95;mindicador.cl
+224;Valentina Muñoz;53;Rancagua;2;39146;857.95;mindicador.cl
+225;Daniela Sepúlveda;47;Santiago;3;111972;857.95;mindicador.cl
+226;Martina Muñoz;32;Santiago;8;160620;857.95;mindicador.cl
+227;Ignacio Martínez;44;Santiago;3;55980;857.95;mindicador.cl
+228;Lucas Muñoz;58;Santiago;6;438418;857.95;mindicador.cl
+229;Vicente Soto;59;Valparaíso;5;143760;857.95;mindicador.cl
+230;Valentina Silva;20;Valparaíso;2;63224;857.95;mindicador.cl
+231;Tomás Martínez;24;Santiago;6;125732;857.95;mindicador.cl
+232;Gabriel Soto;53;Santiago;7;128605;857.95;mindicador.cl
+233;Ana Flores;22;Santiago;5;33203;857.95;mindicador.cl
+234;Fernanda Sepúlveda;19;Santiago;2;85618;857.95;mindicador.cl
+235;Tomás Rojas;29;Santiago;3;91475;857.95;mindicador.cl
+236;Daniela Martínez;40;Concepción;3;66299;857.95;mindicador.cl
+237;Joaquín Martínez;34;Santiago;5;126680;857.95;mindicador.cl
+238;Benjamín Pérez;27;Santiago;6;225347;857.95;mindicador.cl
+239;Martina Martínez;27;Santiago;7;68480;857.95;mindicador.cl
+240;Joaquín Torres;26;Santiago;3;55122;857.95;mindicador.cl
+241;Camila Sepúlveda;24;Santiago;4;46769;857.95;mindicador.cl
+242;Lucas Sepúlveda;62;Santiago;2;126475;857.95;mindicador.cl
+243;Sofía Silva;39;Antofagasta;6;237596;857.95;mindicador.cl
+244;Joaquín Díaz;46;Santiago;7;49886;857.95;mindicador.cl
+245;Joaquín Sepúlveda;29;Valparaíso;2;26431;857.95;mindicador.cl
+246;Sofía Pérez;33;Valparaíso;3;72627;857.95;mindicador.cl
+247;Fernanda Contreras;26;Santiago;2;41174;857.95;mindicador.cl
+248;Benjamín Díaz;18;Santiago;2;18639;857.95;mindicador.cl
+249;Ignacio Díaz;18;La Serena;3;215864;857.95;mindicador.cl
+250;Ana Muñoz;18;Antofagasta;2;60738;857.95;mindicador.cl
+251;Valentina Flores;18;Santiago;3;94240;857.95;mindicador.cl
+252;Tomás Muñoz;21;Santiago;3;49867;857.95;mindicador.cl
+253;Valentina Muñoz;51;Santiago;6;225366;857.95;mindicador.cl
+254;Martina Flores;34;Valparaíso;6;119936;857.95;mindicador.cl
+255;Joaquín Contreras;50;Concepción;6;129485;857.95;mindicador.cl
+256;Camila Soto;40;Santiago;4;147905;857.95;mindicador.cl
+257;Daniela Martínez;44;Santiago;4;39963;857.95;mindicador.cl
+258;Sofía Pérez;24;Temuco;2;126245;857.95;mindicador.cl
+259;Valentina Muñoz;41;Santiago;6;168625;857.95;mindicador.cl
+260;Lucas Martínez;44;Valparaíso;5;245523;857.95;mindicador.cl
+261;Ignacio Rojas;28;La Serena;1;8327;857.95;mindicador.cl
+262;Valentina Contreras;42;Santiago;4;56017;857.95;mindicador.cl
+263;Martina Flores;42;Santiago;6;74895;857.95;mindicador.cl
+264;Antonia Flores;28;Santiago;4;114308;857.95;mindicador.cl
+265;Catalina Pérez;22;Temuco;1;28997;857.95;mindicador.cl
+266;Lucas Sepúlveda;21;Santiago;5;103099;857.95;mindicador.cl
+267;Tomás Silva;36;Santiago;4;58791;857.95;mindicador.cl
+268;Mateo Soto;39;Santiago;6;72511;857.95;mindicador.cl
+269;Joaquín Muñoz;25;Santiago;5;111300;857.95;mindicador.cl
+270;Lucas Pérez;35;Concepción;2;39057;857.95;mindicador.cl
+271;Martina Silva;42;Santiago;2;34422;857.95;mindicador.cl
+272;Ana Flores;42;Valparaíso;8;469265;857.95;mindicador.cl
+273;Camila González;54;Concepción;5;129998;857.95;mindicador.cl
+274;Catalina Martínez;50;Antofagasta;3;157012;857.95;mindicador.cl
+275;Benjamín Torres;23;Santiago;5;97151;857.95;mindicador.cl
+276;Tomás Flores;55;Antofagasta;4;109601;857.95;mindicador.cl
+277;Tomás Soto;29;Concepción;5;118679;857.95;mindicador.cl
+278;Ignacio Muñoz;48;Santiago;4;38836;857.95;mindicador.cl
+279;Sofía Díaz;36;La Serena;3;160650;857.95;mindicador.cl
+280;Sofía Torres;30;Antofagasta;3;72129;857.95;mindicador.cl
+281;Isidora Torres;18;Santiago;6;227927;857.95;mindicador.cl
+282;Tomás Silva;33;Temuco;6;93747;857.95;mindicador.cl
+283;Daniela Muñoz;18;Valparaíso;6;142983;857.95;mindicador.cl
+284;Tomás Muñoz;47;Concepción;5;78110;857.95;mindicador.cl
+285;Benjamín Soto;53;Rancagua;4;188703;857.95;mindicador.cl
+286;Antonia Silva;25;Santiago;3;88755;857.95;mindicador.cl
+287;Camila González;39;Antofagasta;6;184961;857.95;mindicador.cl
+288;Lucas Martínez;26;Santiago;5;268697;857.95;mindicador.cl
+289;Vicente Contreras;27;Antofagasta;8;376090;857.95;mindicador.cl
+290;Tomás González;44;Concepción;2;80309;857.95;mindicador.cl
+291;Ignacio Muñoz;35;Santiago;6;69563;857.95;mindicador.cl
+292;Isidora Soto;56;Santiago;5;78683;857.95;mindicador.cl
+293;Catalina Martínez;29;Santiago;6;79282;857.95;mindicador.cl
+294;Martina Sepúlveda;47;Santiago;3;117516;857.95;mindicador.cl
+295;Vicente Soto;36;Santiago;3;88360;857.95;mindicador.cl
+296;Vicente Díaz;45;Santiago;5;59794;857.95;mindicador.cl
+297;Gabriel Flores;30;Santiago;4;97618;857.95;mindicador.cl
+298;Benjamín Soto;34;Santiago;5;60240;857.95;mindicador.cl
+299;Martina Díaz;34;La Serena;6;149096;857.95;mindicador.cl
+300;Ana Soto;25;Concepción;3;25619;857.95;mindicador.cl
+301;Mateo González;43;La Serena;2;75536;857.95;mindicador.cl
+302;Ignacio Díaz;43;Santiago;8;248894;857.95;mindicador.cl
+303;Ana Contreras;42;Temuco;2;140864;857.95;mindicador.cl
+304;Antonia Flores;53;Concepción;6;235779;857.95;mindicador.cl
+305;Vicente Martínez;52;Santiago;1;21096;857.95;mindicador.cl
+306;Camila Sepúlveda;31;Santiago;4;148466;857.95;mindicador.cl
+307;Martina Contreras;39;Concepción;1;15089;857.95;mindicador.cl
+308;Vicente Muñoz;28;Santiago;4;54130;857.95;mindicador.cl
+309;Martina Pérez;35;Valparaíso;2;61907;857.95;mindicador.cl
+310;Sofía Flores;28;Rancagua;4;27904;857.95;mindicador.cl
+311;Joaquín González;54;Santiago;7;170137;857.95;mindicador.cl
+312;Daniela Torres;39;Santiago;1;10479;857.95;mindicador.cl
+313;Camila Martínez;32;Rancagua;4;104924;857.95;mindicador.cl
+314;Martina Díaz;49;Concepción;3;50907;857.95;mindicador.cl
+315;Isidora Sepúlveda;18;Santiago;5;164776;857.95;mindicador.cl
+316;Joaquín Torres;18;Temuco;4;102841;857.95;mindicador.cl
+317;Fernanda González;45;Temuco;4;215894;857.95;mindicador.cl
+318;Fernanda Muñoz;36;Valparaíso;3;79499;857.95;mindicador.cl
+319;Antonia Silva;38;Concepción;6;103936;857.95;mindicador.cl
+320;Fernanda Flores;19;Santiago;7;148631;857.95;mindicador.cl
+321;Martina González;35;Santiago;3;35420;857.95;mindicador.cl
+322;Sofía Silva;59;Concepción;2;53405;857.95;mindicador.cl
+323;Joaquín Muñoz;45;Santiago;2;74777;857.95;mindicador.cl
+324;Antonia Silva;37;Concepción;3;301973;857.95;mindicador.cl
+325;Catalina Silva;30;Antofagasta;9;160227;857.95;mindicador.cl
+326;Isidora Muñoz;30;Santiago;4;75680;857.95;mindicador.cl
+327;Isidora Martínez;18;Concepción;2;39473;857.95;mindicador.cl
+328;Ana Torres;38;Santiago;4;107854;857.95;mindicador.cl
+329;Camila Torres;45;Temuco;8;243402;857.95;mindicador.cl
+330;Vicente González;18;Santiago;2;51686;857.95;mindicador.cl
+331;Vicente Rojas;27;Concepción;3;137588;857.95;mindicador.cl
+332;Mateo Rojas;21;Valparaíso;1;15365;857.95;mindicador.cl
+333;Martina Soto;23;Santiago;6;254770;857.95;mindicador.cl
+334;Ignacio Muñoz;36;Concepción;2;67864;857.95;mindicador.cl
+335;Tomás Torres;18;La Serena;2;47623;857.95;mindicador.cl
+336;Ignacio Sepúlveda;42;Valparaíso;8;162645;857.95;mindicador.cl
+337;Catalina Sepúlveda;44;La Serena;2;188274;857.95;mindicador.cl
+338;Martina Rojas;32;Rancagua;5;81453;857.95;mindicador.cl
+339;Valentina González;18;Santiago;4;116915;857.95;mindicador.cl
+340;Catalina Torres;23;Valparaíso;6;92219;857.95;mindicador.cl
+341;Joaquín Díaz;50;Santiago;1;71696;857.95;mindicador.cl
+342;Martina Silva;18;Antofagasta;5;189888;857.95;mindicador.cl
+343;Joaquín Torres;31;Valparaíso;5;83843;857.95;mindicador.cl
+344;Vicente González;21;Santiago;4;129467;857.95;mindicador.cl
+345;Antonia González;45;Santiago;3;87161;857.95;mindicador.cl
+346;Isidora González;27;Temuco;2;40441;857.95;mindicador.cl
+347;Catalina Muñoz;40;Santiago;7;271177;857.95;mindicador.cl
+348;Antonia González;42;Concepción;5;151284;857.95;mindicador.cl
+349;Valentina Sepúlveda;57;Santiago;5;143678;857.95;mindicador.cl
+350;Camila Silva;33;Rancagua;3;74270;857.95;mindicador.cl
+351;Vicente Flores;40;Santiago;8;244951;857.95;mindicador.cl
+352;Ana Sepúlveda;18;Santiago;3;94588;857.95;mindicador.cl
+353;Martina Flores;49;Antofagasta;4;96110;857.95;mindicador.cl
+354;Benjamín Rojas;26;Temuco;5;89958;857.95;mindicador.cl
+355;Catalina Díaz;28;Santiago;6;382724;857.95;mindicador.cl
+356;Catalina Torres;35;Valparaíso;3;43466;857.95;mindicador.cl
+357;Camila Rojas;18;La Serena;2;60785;857.95;mindicador.cl
+358;Antonia González;38;Temuco;3;67024;857.95;mindicador.cl
+359;Sofía Martínez;47;Santiago;7;452801;857.95;mindicador.cl
+360;Fernanda Sepúlveda;39;Valparaíso;1;14881;857.95;mindicador.cl
+361;Gabriel Flores;18;La Serena;5;80603;857.95;mindicador.cl
+362;Antonia Flores;34;La Serena;3;40609;857.95;mindicador.cl
+363;Isidora Muñoz;44;La Serena;5;151483;857.95;mindicador.cl
+364;Antonia Sepúlveda;18;Valparaíso;6;75876;857.95;mindicador.cl
+365;Camila Torres;22;Santiago;12;228862;857.95;mindicador.cl
+366;Vicente Martínez;46;Temuco;2;19209;857.95;mindicador.cl
+367;Tomás Sepúlveda;38;Antofagasta;7;199989;857.95;mindicador.cl
+368;Martina Torres;40;Antofagasta;2;33510;857.95;mindicador.cl
+369;Ana Soto;57;Santiago;12;131047;857.95;mindicador.cl
+370;Fernanda González;41;Santiago;6;271025;857.95;mindicador.cl
+371;Mateo Soto;43;La Serena;3;33052;857.95;mindicador.cl
+372;Joaquín Rojas;68;Santiago;3;118400;857.95;mindicador.cl
+373;Benjamín Muñoz;32;Rancagua;1;18175;857.95;mindicador.cl
+374;Mateo Muñoz;25;Santiago;5;293670;857.95;mindicador.cl
+375;Gabriel Martínez;40;La Serena;5;180519;857.95;mindicador.cl
+376;Sofía Contreras;40;Temuco;6;88284;857.95;mindicador.cl
+377;Fernanda Contreras;29;Santiago;7;101601;857.95;mindicador.cl
+378;Fernanda Martínez;23;Santiago;9;315431;857.95;mindicador.cl
+379;Mateo Contreras;63;Concepción;4;90467;857.95;mindicador.cl
+380;Isidora Silva;39;Concepción;4;84752;857.95;mindicador.cl
+381;Ana Muñoz;26;Santiago;9;445915;857.95;mindicador.cl
+382;Antonia Torres;46;Concepción;4;74619;857.95;mindicador.cl
+383;Catalina Soto;34;Temuco;7;185769;857.95;mindicador.cl
+384;Isidora Muñoz;32;Valparaíso;2;82431;857.95;mindicador.cl
+385;Ana Sepúlveda;42;Santiago;2;73356;857.95;mindicador.cl
+386;Camila Martínez;19;Santiago;7;157740;857.95;mindicador.cl
+387;Sofía González;39;Santiago;4;79355;857.95;mindicador.cl
+388;Ignacio Rojas;58;Santiago;7;71668;857.95;mindicador.cl
+389;Antonia González;41;Santiago;5;66038;857.95;mindicador.cl
+390;Camila Díaz;30;Concepción;5;154388;857.95;mindicador.cl
+391;Fernanda Muñoz;29;Santiago;2;44345;857.95;mindicador.cl
+392;Valentina Martínez;30;Rancagua;5;125042;857.95;mindicador.cl
+393;Mateo Contreras;32;Santiago;3;130699;857.95;mindicador.cl
+394;Lucas Flores;30;Santiago;2;12903;857.95;mindicador.cl
+395;Daniela Martínez;46;La Serena;2;43305;857.95;mindicador.cl
+396;Gabriel Silva;18;Temuco;6;165555;857.95;mindicador.cl
+397;Ana Contreras;45;Santiago;5;88986;857.95;mindicador.cl
+398;Valentina González;30;Santiago;5;265254;857.95;mindicador.cl
+399;Martina González;40;Santiago;4;170636;857.95;mindicador.cl
+400;Martina Silva;21;Valparaíso;4;121404;857.95;mindicador.cl
+401;Catalina González;51;Valparaíso;2;140396;857.95;mindicador.cl
+402;Fernanda González;50;Santiago;4;43587;857.95;mindicador.cl
+403;Martina Rojas;47;Santiago;1;29963;857.95;mindicador.cl
+404;Catalina Torres;18;Valparaíso;4;114966;857.95;mindicador.cl
+405;Tomás Soto;45;Rancagua;4;64036;857.95;mindicador.cl
+406;Vicente Martínez;40;Concepción;13;379598;857.95;mindicador.cl
+407;Benjamín Pérez;18;Valparaíso;10;127768;857.95;mindicador.cl
+408;Camila Rojas;35;Santiago;6;213680;857.95;mindicador.cl
+409;Antonia Pérez;39;Santiago;4;178955;857.95;mindicador.cl
+410;Ana Muñoz;42;Santiago;3;82997;857.95;mindicador.cl
+411;Valentina Sepúlveda;37;La Serena;5;46998;857.95;mindicador.cl
+412;Isidora Rojas;38;Temuco;5;64407;857.95;mindicador.cl
+413;Martina Pérez;53;Temuco;3;91682;857.95;mindicador.cl
+414;Camila Flores;50;Rancagua;10;259794;857.95;mindicador.cl
+415;Ana Silva;18;Rancagua;5;32925;857.95;mindicador.cl
+416;Daniela Soto;31;Rancagua;6;291890;857.95;mindicador.cl
+417;Catalina Contreras;33;Santiago;1;26936;857.95;mindicador.cl
+418;Camila Sepúlveda;18;Santiago;6;100695;857.95;mindicador.cl
+419;Martina Díaz;36;Santiago;1;45307;857.95;mindicador.cl
+420;Vicente Silva;50;Valparaíso;2;35187;857.95;mindicador.cl
+421;Antonia Torres;22;Santiago;6;108194;857.95;mindicador.cl
+422;Daniela Contreras;39;Antofagasta;3;87686;857.95;mindicador.cl
+423;Fernanda Soto;24;Concepción;7;466236;857.95;mindicador.cl
+424;Lucas Muñoz;27;Valparaíso;6;366268;857.95;mindicador.cl
+425;Benjamín Rojas;53;Santiago;5;150982;857.95;mindicador.cl
+426;Valentina Flores;28;Santiago;2;62530;857.95;mindicador.cl
+427;Gabriel Contreras;41;Santiago;8;309457;857.95;mindicador.cl
+428;Ignacio Díaz;18;Antofagasta;4;50262;857.95;mindicador.cl
+429;Ana Soto;57;Concepción;5;172902;857.95;mindicador.cl
+430;Daniela Contreras;42;La Serena;2;37400;857.95;mindicador.cl
+431;Sofía Contreras;33;Santiago;5;144048;857.95;mindicador.cl
+432;Fernanda Martínez;42;Santiago;3;65089;857.95;mindicador.cl
+433;Ignacio Díaz;18;Santiago;3;97329;857.95;mindicador.cl
+434;Camila Silva;49;La Serena;2;55146;857.95;mindicador.cl
+435;Benjamín Soto;31;La Serena;5;12466;857.95;mindicador.cl
+436;Camila Flores;33;Santiago;6;169964;857.95;mindicador.cl
+437;Lucas Muñoz;29;Temuco;5;174564;857.95;mindicador.cl
+438;Antonia Muñoz;28;Santiago;4;133895;857.95;mindicador.cl
+439;Sofía Soto;43;Temuco;9;210266;857.95;mindicador.cl
+440;Benjamín Contreras;38;Santiago;5;308188;857.95;mindicador.cl
+441;Catalina Martínez;43;Santiago;5;157918;857.95;mindicador.cl
+442;Martina Pérez;35;Antofagasta;6;189438;857.95;mindicador.cl
+443;Camila Torres;41;Santiago;2;95004;857.95;mindicador.cl
+444;Tomás Soto;30;Santiago;3;91748;857.95;mindicador.cl
+445;Vicente Muñoz;62;Santiago;2;32589;857.95;mindicador.cl
+446;Joaquín Muñoz;18;Santiago;4;26506;857.95;mindicador.cl
+447;Martina Flores;50;La Serena;6;119618;857.95;mindicador.cl
+448;Catalina Muñoz;51;Antofagasta;5;186536;857.95;mindicador.cl
+449;Vicente Flores;25;Temuco;3;56842;857.95;mindicador.cl
+450;Martina Díaz;62;Santiago;2;74493;857.95;mindicador.cl
+451;Catalina Muñoz;47;Valparaíso;3;81891;857.95;mindicador.cl
+452;Antonia Díaz;47;Santiago;2;100437;857.95;mindicador.cl
+453;Tomás Silva;35;Santiago;1;24805;857.95;mindicador.cl
+454;Ana Soto;32;Santiago;3;103520;857.95;mindicador.cl
+455;Lucas Sepúlveda;32;Temuco;4;127201;857.95;mindicador.cl
+456;Vicente Silva;40;Temuco;6;338914;857.95;mindicador.cl
+457;Camila Pérez;52;La Serena;2;12377;857.95;mindicador.cl
+458;Joaquín Silva;37;Valparaíso;3;68438;857.95;mindicador.cl
+459;Gabriel Flores;24;Valparaíso;5;200860;857.95;mindicador.cl
+460;Sofía Pérez;45;Valparaíso;3;177915;857.95;mindicador.cl
+461;Fernanda Muñoz;46;Valparaíso;3;78885;857.95;mindicador.cl
+462;Camila Pérez;43;Santiago;4;85124;857.95;mindicador.cl
+463;Fernanda Torres;44;Santiago;3;116285;857.95;mindicador.cl
+464;Benjamín Rojas;32;Santiago;10;401861;857.95;mindicador.cl
+465;Ana Flores;24;Rancagua;4;87431;857.95;mindicador.cl
+466;Catalina Silva;25;Valparaíso;6;191442;857.95;mindicador.cl
+467;Camila Silva;18;Rancagua;5;234537;857.95;mindicador.cl
+468;Lucas Díaz;38;Santiago;9;631306;857.95;mindicador.cl
+469;Valentina Flores;34;Valparaíso;3;108446;857.95;mindicador.cl
+470;Antonia González;30;Santiago;5;136103;857.95;mindicador.cl
+471;Fernanda Díaz;18;Santiago;2;53747;857.95;mindicador.cl
+472;Ignacio Soto;20;Santiago;4;135198;857.95;mindicador.cl
+473;Benjamín Soto;48;Santiago;6;140937;857.95;mindicador.cl
+474;Tomás Soto;27;Temuco;2;51414;857.95;mindicador.cl
+475;Joaquín Muñoz;39;Santiago;4;60337;857.95;mindicador.cl
+476;Ignacio Rojas;18;Concepción;7;355255;857.95;mindicador.cl
+477;Gabriel Muñoz;52;Valparaíso;6;78820;857.95;mindicador.cl
+478;Ana Contreras;33;Santiago;7;141026;857.95;mindicador.cl
+479;Joaquín Pérez;38;Valparaíso;7;183710;857.95;mindicador.cl
+480;Sofía Contreras;63;Santiago;8;596687;857.95;mindicador.cl
+481;Martina Silva;53;Rancagua;1;19867;857.95;mindicador.cl
+482;Ignacio Martínez;31;Antofagasta;5;90638;857.95;mindicador.cl
+483;Isidora Contreras;28;La Serena;3;63630;857.95;mindicador.cl
+484;Ignacio Silva;31;Valparaíso;5;314212;857.95;mindicador.cl
+485;Tomás Silva;41;Santiago;2;14663;857.95;mindicador.cl
+486;Isidora Silva;34;Temuco;3;42207;857.95;mindicador.cl
+487;Mateo Silva;30;Santiago;5;557911;857.95;mindicador.cl
+488;Vicente Díaz;53;Santiago;1;37870;857.95;mindicador.cl
+489;Fernanda Rojas;34;Santiago;10;136926;857.95;mindicador.cl
+490;Lucas Sepúlveda;63;Antofagasta;7;163898;857.95;mindicador.cl
+491;Antonia Pérez;36;Concepción;1;24305;857.95;mindicador.cl
+492;Gabriel Contreras;56;La Serena;5;198661;857.95;mindicador.cl
+493;Fernanda Rojas;39;Antofagasta;3;203724;857.95;mindicador.cl
+494;Lucas Soto;47;Santiago;3;100278;857.95;mindicador.cl
+495;Martina Contreras;26;Temuco;4;76712;857.95;mindicador.cl
+496;Benjamín Silva;25;Santiago;4;161038;857.95;mindicador.cl
+497;Camila Contreras;41;Concepción;3;52400;857.95;mindicador.cl
+498;Mateo Pérez;47;Santiago;3;42892;857.95;mindicador.cl
+499;Antonia Flores;35;Rancagua;1;4814;857.95;mindicador.cl
+500;Benjamín Contreras;20;Santiago;4;42341;857.95;mindicador.cl

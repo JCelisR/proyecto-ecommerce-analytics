@@ -1,47 +1,44 @@
 import pandas as pd
 import numpy as np
 
-# 1. CARGA DE DATOS (Conexión Clase 1 -> Clase 2)
+# 1. CARGA DE DATOS
 # Cargamos el archivo que creamos con NumPy en clase 1
 try:
+    df = pd.read_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_transacciones.csv')
     data_numpy = np.load('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\transacciones_iniciales.npy')
     print("✅ Datos cargados exitosamente desde NumPy.\n")
 except FileNotFoundError:
     print("❌ Error: No se encontró el archivo .npy. Asegúrate de ejecutar la Clase 1 primero.")
 
-# 2. CREACIÓN DEL DATAFRAME
-# Convertimos la matriz en un DataFrame con nombres de columnas claros
-df = pd.DataFrame(data_numpy, columns=['ID_Cliente', 'Monto', 'Cantidad'])
+# 2. EXPLORACIÓN INICIAL
+print("\n--- Primeras 5 filas ---")
+print(df.head())  # Visualizar primeras filas 
 
-# Convertimos ID_Cliente a entero (NumPy lo guardó como float por la matriz)
-df['ID_Cliente'] = df['ID_Cliente'].astype(int)
+print("\n--- Últimas 5 filas ---")
+print(df.tail())  # Visualizar últimas filas
 
-# 3. EXPLORACIÓN BÁSICA
-print("--- PRIMEROS 5 REGISTROS (head) ---")
-print(df.head(), "\n")
+print("\n--- Información General ---")
+print(df.info())  # Inspección de tipos de datos y nulos 
 
-print("--- INFORMACIÓN ESTRUCTURAL (info) ---")
-df.info()
-print("\n")
+print("\n--- Estadísticas Descriptivas ---")
+print(df.describe())  # Estadísticas básicas 
 
-print("--- ESTADÍSTICAS DESCRIPTIVAS (describe) ---")
-print(df.describe(), "\n")
+# 3. FILTROS CONDICIONALES
+# Ejemplo: Transacciones con monto total mayor a 100,000
+ventas_altas = df[df['Monto_Total'] > 100000]
+print(f"\n🚀 Cantidad de ventas > 100,000: {len(ventas_altas)}")
 
-# 4. SELECCIÓN Y FILTRADO
-# Ejemplo: Filtrar transacciones mayores a $700
-ventas_altas = df[df['Monto'] > 700]
+# Ejemplo: Clientes con más de 4 compras
+clientes_frecuentes = df[df['Total_Compras'] > 4]
+print(f"🛒 Cantidad de clientes frecuentes (>4 compras): {len(clientes_frecuentes)}")
 
-# Ejemplo: Clientes que compraron más de 4 productos
-clientes_mayoristas = df[df['Cantidad'] > 4]
+# 4. SUMARIZACIÓN Y VALORES ÚNICOS
+print("\n--- Clientes por Ciudad ---")
+print(df['Ciudad'].value_counts())  # Conteo por categorías
 
-print(f"Cantidad de ventas mayores a $700: {len(ventas_altas)}")
-print(f"Monto promedio de ventas con +4 productos: ${clientes_mayoristas['Monto'].mean():.2f}\n")
+print("\n--- Ciudades Únicas ---")
+print(df['Ciudad'].unique())  # Identificar valores únicos
 
-# 5. SUMARIZACIÓN Y VALORES ÚNICOS
-print(f"Total de clientes únicos: {df['ID_Cliente'].nunique()}")
-print("Conteo de transacciones por cantidad de productos:")
-print(df['Cantidad'].value_counts())
-
-# 6. GUARDAR PARA LA SIGUIENTE CLASE (Limpieza)
-df.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_transacciones.csv', index=False)
-print("\n✅ Dataset estructurado guardado como 'data/dataset_transacciones.csv'.")
+# 5. GUARDAR PARA LA SIGUIENTE CLASE (Limpieza)
+df.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_explorado.csv', index=False)
+print("\n✅ Dataset estructurado guardado como 'data/dataset_explorado.csv'.")

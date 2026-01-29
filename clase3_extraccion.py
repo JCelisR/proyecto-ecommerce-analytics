@@ -1,58 +1,51 @@
 import pandas as pd
-import numpy as np
+import requests # Librería necesaria para consultar APIs
 
-# 1. CARGA DE CSV (Ventas del E-commerce)
+# 1. CARGA DEL CSV (Ventas del E-commerce)
+    # Cargamos el archivo generado en la Clase 2
 try:
-    # Simulamos la carga del CSV que generamos en la Clase 2
-    df_ventas = pd.read_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_transacciones.csv', 
-                            sep=',', 
-                            encoding='utf-8',
-                            dtype={'ID_Cliente': 'int32', 'Cantidad': 'int8'})
+    df_ventas = pd.read_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_explorado.csv')
     print("✅ CSV de ventas cargado exitosamente.")
 except FileNotFoundError:
-    print("⚠️ No se encontró el CSV. Generando uno de prueba...")
-    # (Código de respaldo por si no hay archivo a mano)
-    df_ventas = pd.DataFrame({'ID_Cliente': [1001, 1002], 'Monto': [500.0, 300.0], 'Cantidad': [2, 1]})
+    print("⚠️ No se encontró el archivo. Verifique la Clase 2.")
 
 # 2. CARGA DE EXCEL
 try:
-    # Si no tienes un excel real, creamos uno para demostrar la escritura y lectura
+    # Simulamos un catálogo de categorías
     df_categorias = pd.DataFrame({
-        'ID_Producto': [1, 2, 3],
-        'Categoria': ['Electrónica', 'Hogar', 'Moda']
+        'ID_Producto': [1, 2, 3, 4, 5],
+        'Categoria': ['Electrónica', 'Hogar', 'Moda', 'Deportes', 'Juguetes']
     })
-    df_categorias.to_excel('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\categorias_productos.xlsx', index=False, sheet_name='Catalogo')
-    
-    # Lectura especificando la hoja
-    df_excel = pd.read_excel('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\categorias_productos.xlsx', sheet_name='Catalogo')
-    print("✅ Archivo Excel cargado exitosamente.")
+    df_categorias.to_excel('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\categorias_productos.xlsx', index=False)
+    df_excel = pd.read_excel('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\categorias_productos.xlsx')
+    print("✅ Archivo Excel de categorías cargado.")
 except Exception as e:
     print(f"❌ Error con Excel: {e}")
 
-# 3. EXTRACCIÓN WEB (Indicadores IPSA Chile)
-# Extraeremos una tabla de ejemplo de la web, en este caso Wikipedia
+# 3. EXTRACCIÓN WEB (API mindicador.cl)
 try:
-    url = "https://es.wikipedia.org/wiki/%C3%8Dndice_de_Precio_Selectivo_de_Acciones"
-    tablas = pd.read_html(url)
-    # Seleccionamos la tabla de las empresas que componen el IPSA
-    df_ipsa = tablas[0] 
-    print(f"✅ Tabla del IPSA extraída exitosamente.")
+    url_api = "https://mindicador.cl/api/dolar"
+    response = requests.get(url_api)
+    data = response.json()
+    
+    # Extraemos el valor del dólar más reciente
+    valor_dolar = data['serie'][0]['valor']
+    print(f"✅ Valor del dólar extraído de la API: ${valor_dolar}")
 except Exception as e:
-    print(f"⚠️ No se pudo extraer la tabla web: {e}")
-    # Creación de respaldo con columnas reales de la página (Empresa, Rubro)
-    df_ipsa = pd.DataFrame(columns=['Empresa', 'Ticker', 'Rubro'])
-    print("ℹ️ Usando DataFrame de respaldo vacío para evitar errores.")
+    print(f"⚠️ Error al consultar la API: {e}")
+    valor_dolar = 950.0         # Valor de respaldo (Plan de contingencia)
 
-# 4. MUESTREO DE DATOS
-print("\n--- Vista rápida de empresas IPSA (Primeras 5 filas) ---")
-if not df_ipsa.empty:
-    # Mostramos las columnas típicas de esa tabla de Wikipedia
-    print(df_ipsa.head(5))
-else:
-    print("La tabla está vacía.")
+# Consulté a Gemini por errores como el 429, entre otros y me sugirió utilizar la página con API.
+# Esto lo realicé con ayuda de Gemini, ya que no estaba en el material del curso.
+# Es muy complejo extraer datos de páginas que tienen protecciones, incluso del sii.cl
 
-# 5. EXPORTACIÓN PARA LA SIGUIENTE CLASE
+# 4. UNIFICACIÓN DE FUENTES
+# En esta etapa consolidamos la información para la limpieza futura
+df_consolidado = df_ventas.copy()
+df_consolidado['Valor_Dolar_Referencia'] = valor_dolar
+df_consolidado['Fuente_Dolar'] = "mindicador.cl"
+
+# 5. GUARDAR DATOS CONSOLIDADOS
 # Consolidamos las ventas en un nuevo archivo para la Clase 4 (Limpieza)
-df_ventas.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\ventas_consolidadas.csv', index=False, sep=';', encoding='latin1')
-
-print("\n Datos exportados a 'data/ventas_consolidadas.csv' listos para limpieza.")
+df_consolidado.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\ventas_consolidadas.csv', index=False, sep=';')
+print("\n Dataset consolidado guardado en 'data/ventas_consolidadas.csv' listo para limpieza.")

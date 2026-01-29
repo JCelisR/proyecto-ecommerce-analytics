@@ -10,41 +10,34 @@ except FileNotFoundError:
     print("❌ Error: Ejecuta primero la Clase 4.")
     exit()
 
-# 2. TRANSFORMACIÓN Y CONVERSIÓN
-# Aseguramos que los tipos de datos sean correctos para cálculos
-df['Monto'] = df['Monto'].astype(float)
-df['Cantidad'] = df['Cantidad'].astype(int)
+# 2. TRANSFORMACIÓN DE TIPOS DE DATOS
+# Aseguramos que los tipos sean correctos para cálculos y ahorro de memoria
+df['ID'] = df['ID'].astype(int)
+df['Total_Compras'] = df['Total_Compras'].astype(np.int32)
+df['Monto_Total'] = df['Monto_Total'].astype(float)
 
-# 3. DISCRETIZACIÓN / BINNING
-# Clasificamos las ventas según el monto en categorías: Económica, Estándar, Premium
-bins = [0, 300, 700, np.inf]
-labels = ['Económica', 'Estándar', 'Premium']
-df['Categoria_Venta'] = pd.cut(df['Monto'], bins=bins, labels=labels)
+# 3. CREACIÓN DE COLUMNAS CALCULADAS Y FUNCIONES LAMBDA
+# Calculamos el Ticket Promedio por cliente
+df['Ticket_Promedio'] = (df['Monto_Total'] / df['Total_Compras']).round(2)
 
-# 4. ENRIQUECIMIENTO CON FUNCIONES LAMBDA Y MAP
-# Aplicamos un impuesto del 15% a cada transacción usando lambda
-df['Impuesto'] = df['Monto'].apply(lambda x: x * 0.15)
+# Aplicamos una función personalizada con lambda para categorizar por edad
+df['Segmento_Etario'] = df['Edad'].apply(lambda x: 'Joven' if x < 30 else ('Adulto' if x < 60 else 'Sénior'))
 
-# Creamos una columna de 'Total' sumando Monto + Impuesto
-df['Total_Con_Impuesto'] = df['Monto'] + df['Impuesto']
+# 4. NORMALIZACIÓN Y ESTRUCTURACIÓN DE DATOS
+# Binning: Categorizamos el valor del cliente según su gasto
+# Creamos 3 niveles: Bronce, Plata, Oro
+bins = [0, 50000, 150000, np.inf]
+labels = ['Bronce', 'Plata', 'Oro']
+df['Rango_Valor_Cliente'] = pd.cut(df['Monto_Total'], bins=bins, labels=labels)
 
-# 5. MANIPULACIÓN DE ESTRUCTURA
-# Renombramos columnas para que sean más descriptivas
-df = df.rename(columns={
-    'Monto': 'Subtotal',
-    'ID_Cliente': 'Cliente_ID'
-})
+# Normalización simple: Score de compras (0 a 1) para identificar clientes activos
+df['Score_Actividad'] = (df['Total_Compras'] - df['Total_Compras'].min()) / (df['Total_Compras'].max() - df['Total_Compras'].min())
 
-# 6. ORDENAMIENTO
-# Ordenamos por Total de forma descendente para ver las mayores ventas
-df = df.sort_values(by='Total_Con_Impuesto', ascending=False)
-
-# 7. ELIMINACIÓN DE DUPLICADOS RESIDUALES
+# 5. ELIMINACIÓN DE DUPLICADOS RESIDUALES
 # Por si la integración de fuentes generó duplicados nuevos
 df = df.drop_duplicates()
 
-# 8. EXPORTACIÓN FINAL PARA ANÁLISIS DE CLASE FINAL
+# 6. EXPORTACIÓN FINAL PARA ANÁLISIS DE CLASE FINAL
 df.to_csv('C:\\Users\\jceli\\Bootcamp\\proyecto-ecommerce-analytics\\data\\dataset_final_wrangled.csv', index=False, sep=';', encoding='latin1')
-print("\n--- Muestra del Dataset Transformado ---")
-print(df[['Cliente_ID', 'Subtotal', 'Categoria_Venta', 'Total_Con_Impuesto']].head())
-print("\n Data Wrangling completado. Archivo 'data/dataset_final_wrangled.csv' generado.")
+print("\n Data Wrangling completado. Columnas nuevas: Ticket_Promedio, Segmento_Etario, Rango_Valor_Cliente.")
+print(df[['Nombre', 'Segmento_Etario', 'Rango_Valor_Cliente', 'Score_Actividad']].head())
